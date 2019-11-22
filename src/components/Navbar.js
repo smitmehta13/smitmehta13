@@ -17,7 +17,7 @@ function Navbar() {
                 text="Sorry, this website is under development and this section is currently not available."
                 onConfirm={toggleAlert}
             />
-            <div className="navbar-top m20">
+            <div className="navbar-top mt10">
                 <div className="justify-center">
                     <a href="#home" title="Home"><div style={{ animationDelay: '1.5s' }} className="icon-wrapper appear"><i className="navbar-icon"><TiHomeOutline /></i></div></a>
                     <a href="#experience" onClick={toggleAlert} title="Work Experience"><div style={{ animationDelay: '1.75s' }} className="icon-wrapper appear"><i className="navbar-icon"><FaBlackTie /></i></div></a>
