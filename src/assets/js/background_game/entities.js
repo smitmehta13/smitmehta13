@@ -49,7 +49,7 @@ class P4 extends Entities {
     constructor() {
         super(
             15, 25,
-            10, (Canvas.dimensions().height / 2),
+            325, (Canvas.dimensions().height / 2),
             4, 4
         )
         this.score = 0;

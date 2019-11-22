@@ -9,7 +9,7 @@ const Random = {
 	},
 	getBoolean: function helper3() {
 		var luck = Math.random();
-		if (luck == 0.5) {
+		if (luck === 0.5) {
 			helper3();
 		}
 		return luck > 0.5;

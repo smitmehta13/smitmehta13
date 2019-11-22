@@ -6,7 +6,8 @@
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-icons": "^3.8.0",
-    "react-scripts": "3.2.0"
+    "react-scripts": "3.2.0",
+    "sweetalert2-react": "^0.8.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -28,5 +29,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
   }
 }

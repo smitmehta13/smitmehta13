@@ -19,7 +19,7 @@ class Bot {
 			} if (p4.check_y_coordinate(elem)) {
 				this.dangerHorizontal = true
 			}
-			if (elem.xspeed != 0) {
+			if (elem.xspeed !== 0) {
 				this.danger_moving_horizontal = true
 			} else {
 				this.danger_moving_vertical = true

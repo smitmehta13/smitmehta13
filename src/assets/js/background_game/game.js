@@ -1,6 +1,6 @@
 import { Enemy, Gold, P4 } from "./entities.js";
 import { Canvas } from "./canvas.js";
-import { Random } from "./random.js";
+// import { Random } from "./random.js";
 import { Bot } from "./bot.js"
 
 
