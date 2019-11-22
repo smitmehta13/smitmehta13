@@ -526,13 +526,13 @@ div.icon-wrapper > i.navbar-icon{
 }
 
 .lucas-name-title{
-  font-size: calc(16px + 1.75vw);
+  font-size: calc(17px + 1.3vw);
   text-shadow: 0 0 3px lightgray;
   min-width:calc(265px + 14vw); 
 }
 
 .home-main-titles{
-    margin-top:14em;
+    margin-top:40vh;
     display:flex;
     justify-content: center;
     margin-left:2em;
@@ -571,7 +571,7 @@ h1,h2,h3,h4,h5{
 
 
 .degree-title{
-  font-size: calc(12px + 1.5vw);
+  font-size: calc(12px + 1.3vw);
 }
 .school-title{
   color: lightgray;
