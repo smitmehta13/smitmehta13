@@ -50,7 +50,7 @@ section{
   max-width: 15rem;
   position: relative;
   bottom:45px;
-  min-width: 8rem;
+  min-width: 6rem;
 	width: 100%;
 	height: auto;
   stroke-linecap: round;
@@ -526,7 +526,7 @@ div.icon-wrapper > i.navbar-icon{
 }
 
 .lucas-name-title{
-  font-size: calc(20px + 1.5vw);
+  font-size: calc(16px + 1.75vw);
   text-shadow: 0 0 3px lightgray;
   min-width:calc(265px + 14vw); 
 }
@@ -544,6 +544,7 @@ div.icon-wrapper > i.navbar-icon{
   }
   .loader{
     bottom:10px;
+    left:15px;
   }
   .home-main{
     left:30px;
@@ -570,7 +571,7 @@ h1,h2,h3,h4,h5{
 
 
 .degree-title{
-  font-size: calc(16px + 1vw);
+  font-size: calc(12px + 1.5vw);
 }
 .school-title{
   color: lightgray;
