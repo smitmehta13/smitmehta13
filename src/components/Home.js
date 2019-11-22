@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaFileAlt, FaGithub, FaEnvelope } from 'react-icons/fa'
-import RESUME from '../assets/docs/resume_for_treehacks.pdf'
+import RESUME from '../assets/docs/resume.pdf'
 
 class Home extends React.Component {
 
