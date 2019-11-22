@@ -44,7 +44,7 @@ section{
 .navbar-top{
   position:fixed;
   left: 50%;
-  transform: translateX(-53.5%);
+  transform: translateX(-50%);
 }
 
 .loader {
