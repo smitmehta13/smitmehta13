@@ -10,12 +10,14 @@ class Home extends React.Component {
     componentWillUnmount = () => {
         $('.appear-button').css('animation-delay', 'none')
         $('html, body').css('overflow', 'auto')
+        $('body').css('background-color', `linear-gradient(left,#282c34, #282c34, #4b6cb7, #D6A4A4, rgb(68, 130, 172),#757F9A,  #71B280,  #ffe082)`)
     }
 
     componentDidMount = () => {
         if (window.innerWidth > 645) {
             $('html, body').css('overflow', 'hidden')
         }
+        $('body').css('background-color', '#282c34')
         if (Home.is_first_render) {
             $('.appear-button').css('animation-delay', '3s');
             Home.is_first_render = false;
