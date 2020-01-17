@@ -1,17 +1,33 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import Navbar from './components/Navbar';
-import BackgroundGame from './components/BackgroundGame';
-import Home from './components/Home';
+import Home from './components/Sections/Home/Home';
+import Experience from './components/Sections/Experience/Experience';
+import Projects from './components/Sections/Projects/Projects';
+import Skills from './components/Sections/Skills/Skills';
+import Me from './components/Sections/Me/Me';
+import Footer from './components/Footer';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 function App() {
+  React.useEffect(() => {
+    AOS.init({ mirror: true, offset: 172 })
+    return () => null
+  }, [])
+  const SECTIONS_MAP = [<Home />, <Skills />, <Experience />, <Projects />, <Me />]
+  const [currentTab, setCurrentTab] = React.useState(0)
+
+  const gotoTab = tab_index => {
+    setCurrentTab(tab_index)
+  }
+
   return (
     <div className="App">
-      <BackgroundGame />
-      <Navbar />
-      <section id="home" className="home-section">
-        <Home />
-      </section>
+      <Navbar currentTab={currentTab} gotoTab={gotoTab} />
+      {SECTIONS_MAP[currentTab]}
+      <Footer />
     </div>
   );
 }

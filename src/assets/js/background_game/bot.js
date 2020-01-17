@@ -68,39 +68,7 @@ class Bot {
 
 	instruction(p4, gold) {
 		let instruction = this.find_gold(p4, gold)
-		// if (p4.isMovingRight || p4.isMovingLeft) {
-		// 	if (!this.dangerHorizontal && this.danger_moving_vertical) {
-		// 		instruction = { prev_key: this.prev_key, new_key: 'pause' }
-		// 	} else if (this.dangerHorizontal && !this.dangerVertical) {
-		// 		instruction = { prev_key: this.prev_key, new_key: Math.random() >= 0.5 ? "up" : "down" }
-		// 	} else if (this.dangerVertical && !this.dangerHorizontal) {
-		// 		instruction = { prev_key: this.prev_key, new_key: (Math.random() >= 0.5) ? "right" : "left" }
-		// 	}//else move diagonal..later
-		// 	else { //not dangerous
-		// 		instruction = this.find_gold(p4, gold)
-		// 	}
-		// } else if (p4.isMovingUp || p4.isMovingDown) {
-		// 	if (!this.dangerVertical && this.danger_moving_horizontal) {
-		// 		instruction = { prev_key: this.prev_key, new_key: 'pause' }
-		// 	} else if (this.dangerVertical && !this.dangerHorizontal) {
-		// 		instruction = { prev_key: this.prev_key, new_key: (Math.random() >= 0.5) ? "right" : "left" }
-		// 	} else if (this.dangerHorizontal && !this.dangerVertical) {
-		// 		instruction = { prev_key: this.prev_key, new_key: (Math.random() >= 0.5) ? "up" : "down" }
-		// 	}
-		// 	else {
-		// 		instruction = this.find_gold(p4, gold)
-		// 	}
-		// } else { //if paused
-		// 	if (this.dangerHorizontal && !this.dangerVertical) {
-		// 		instruction = { prev_key: this.prev_key, new_key: (Math.random() >= 0.5) ? "up" : "down" }
-		// 	} else if (this.dangerVertical && !this.dangerHorizontal) {
-		// 		instruction = { prev_key: this.prev_key, new_key: (Math.random() >= 0.5) ? "right" : "left" }
-		// 	} else if ((this.danger_moving_horizontal || this.danger_moving_vertical) && (!this.dangerVertical && !this.dangerHorizontal)) {
-		// 		instruction = { prev_key: this.prev_key, new_key: 'pause' }
-		// 	} else {
-		// 		instruction = this.find_gold(p4, gold)
-		// 	}
-		// }
+
 		if (instruction) {
 			//move bot
 			this.prev_key = instruction.new_key
