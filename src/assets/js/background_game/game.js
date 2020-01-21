@@ -1,4 +1,4 @@
-import { Enemy, Gold, P4 } from "./entities.js";
+import { Gold, P4 } from "./entities.js";
 import { Canvas } from "./canvas.js";
 import { Bot } from "./bot.js"
 
@@ -8,7 +8,6 @@ class Game {
 		this.gameLive = false;
 		this.p4 = new P4();
 		this.bot = new Bot()
-		this.enemies = [new Enemy()];
 		this.gold = new Gold();
 		this.canvas = new Canvas();
 	}
