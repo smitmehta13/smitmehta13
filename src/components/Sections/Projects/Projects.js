@@ -2,6 +2,8 @@ import React from 'react'
 import ProjectCard from './ProjectCard'
 import HTN_ICON from '../../../assets/images/hack_the_north.jpeg'
 import SENSES from '../../../assets/images/senses.png'
+import DELTAHACKS_ICON from '../../../assets/images/delta_hacks.png'
+import BWELL from '../../../assets/images/bwell.png'
 import PLANET_JOB_ICON from '../../../assets/images/planet_job_icon.png'
 import PLANET_JOB from '../../../assets/images/planet_job.png'
 import HTML_DETECTIVE_ICON from '../../../assets/images/html_detective_icon.png'
@@ -128,6 +130,44 @@ function Projects(props) {
                 { src: PYTHON, title: 'Python' },
                 { src: JAVASCRIPT, title: 'JavaScript' },
                 { src: MATPLOTLIB, title: 'Matplotlib' },
+            ]
+        },
+        {
+            icon: DELTAHACKS_ICON,
+            title: 'bWell',
+            subtitle: 'DeltaHacks 2020',
+            main_image: BWELL,
+            description: `
+                <b>bWell</b> assists those who suffer from diabetes track their blood sugar levels. <br/> <br/>
+                <b>How does it do that? </b> <br/>
+                By the concept of a "meals" (aka what the user is about to eat). <br/>
+                Users can add "meals" in three different ways: submitting a photo of the meal, recording an audio of what the meal is, or simple querying a meal with text. <br/><br/>
+                Once a meal has been created, we collect the "glycemic load" and "glycemic index" (terms used in medical literature referring to a coefficient of how much such a meal would spike sugar levels on ones blood-stream) and adds it to the user's dashboard. <br/><br/>
+                <b>What I did:</b> <br/>
+                I played a key role on my team. I was responsible for the frontend application as a whole except for the UI which was done by a teammate. <br/>
+                I programmed the camera and the audio recording system for meal creation purposes. Transformed the collected data into base64 and sent it to appropriate APIs (Clarifai Food Detection AI for image and Google Speech-To-Text for audio).
+                With the decoded response from the APIs we could create a JSON with food details and portion sizes. <br/>
+                With that information we could query Edaman API to get nutrition information about such meal and after that, with the nutrition info, my friend could dynamically scrape the glycemic index from a university website.
+                After all this proccess we would add the computed results to the user's dashboard distinguishing if that meal would be good, medium or bad in terms of how it affects their sugar levels.
+                <br/> <br/>
+                <b>Difficulties:</b> <br/>
+                Setting up the audio recording was the toughest thing for me, it was difficult because it was an asynchronous event and the documentation to perform that on react-native wasn't enough. <br/>
+                And since we only had 24 hours, it was quite stressing.
+                Another issue was the fact that Clarifai api only accepted an image via a URL. Therefore we needed to send the photo taken to AWS S3, upload it there, retrieve a URL of the image and then send it to Clarifai, which made our meal creation through image quite slow, which turned judges down :/<br/><br/>
+                But other than that, everything was great and it was an amazing learning experience.
+            `,
+            short_description: 'An meal based app that assists who suffers from diabetes',
+            links: {
+                github: 'https://github.com/lnogueir/DeltaHacks2020',
+                devpost: 'https://devpost.com/software/bwell',
+                youtube: 'https://www.youtube.com/watch?v=Ypn5Iie0KZw'
+            },
+            tech: [
+                { src: REACT, title: 'React Native' },
+                { src: NODE, title: 'Node' },
+                { src: GOOGLE_CLOUD, title: 'Google Cloud Platform' },
+                { src: JAVASCRIPT, title: 'JavaScript' },
+                { src: AWS, title: 'AWS' },
             ]
         },
         {
