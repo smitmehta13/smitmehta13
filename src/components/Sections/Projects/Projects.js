@@ -22,7 +22,10 @@ import CHESS_ICON from '../../../assets/images/chess_icon.png'
 import CHESS from '../../../assets/images/chess.png'
 import AWS from '../../../assets/images/aws.svg'
 import NODE from '../../../assets/images/node.svg'
+import SOCKETIO from '../../../assets/images/socket-io.svg'
+import DOCKER from '../../../assets/images/docker.svg'
 import LOOPBACK from '../../../assets/images/loopback.png'
+import WEBRTC from '../../../assets/images/webrtc.svg'
 import FLASK from '../../../assets/images/flask.svg'
 import PYTHON from '../../../assets/images/python.svg'
 import MATPLOTLIB from '../../../assets/images/matplotlib.svg'
@@ -33,14 +36,51 @@ import BOOTSTRAP from '../../../assets/images/bootstrap.svg'
 import NWHACKS_ICON from '../../../assets/images/nwhacks.png'
 import WENOTE from '../../../assets/images/wenote.png'
 import MONGODB from '../../../assets/images/mongodb.svg'
+import REDIS from '../../../assets/images/redis.svg'
 import TREEGEN from '../../../assets/images/tree_gen.png'
 import TREEGEN_ICON from '../../../assets/images/treeicon.png'
-
-
-
+import LITEBOARD_ICON from '../../../assets/images/liteboard_icon.png'
+import LITEBOARD from '../../../assets/images/liteboard.png'
 
 function Projects(props) {
     const PROJECTS = [
+        {
+            icon: LITEBOARD_ICON,
+            title: 'Liteboard',
+            subtitle: 'Startup',
+            main_image: LITEBOARD,
+            description: `
+                <b>Liteboard</b> is a browser-based platform made to support real-like lecture experiences. <br/>
+                <br/>
+                It allows anyone to quickly setup a lecturing room with webcam, audio and <b>state-of-the-art drawing tools</b>. It is focused on simplicity; no user authentication or downloads required, <b>just create a lecture, share the link, done</b>. It's really that simple. <br/>
+                <br/>
+                Liteboard is powered by <b>WebRTC</b> and uses the Janus implementation of a Selective Forwarding Unit (SFU) to support multiple participants in a single room while <b>ensuring low and stable latency</b>.
+                The application, the janus gateway server and the redis database are all <b>deployed as docker containers</b> to both staging and production environments in AWS and GCP, respectively. This decision was taken in order to shrink our costs and as a strategy to scale vertically.
+                <br/> <br/>
+                We use <b>redis</b> as our database since it's really convenient and common practice to use it along Socket.IO due to scalability reasons and because redis provides data structures that are natural to work with <b>Socket.IO rooms</b>.
+                </br></br>
+                Liteboard use Paper.js to provide modern drawing tools that smooths your drawing for the best user experience.
+                <br/><br/>
+                Click the link button below and start lecturing!
+            `,
+            short_description: 'A decentralized browser-based lecturing platform with WebRTC',
+            links: {
+                github: 'https://github.com/jeverd/lecture-experience',
+                website: 'https://liteboard.io'
+            },
+            tech: [
+                { src: JAVASCRIPT, title: 'JavaScript' },
+                { src: REDIS, title: 'Redis' },
+                { src: DOCKER, title: 'Docker'},
+                { src: WEBRTC, title: 'WebRTC' },
+                { src: HTML, title: 'HTML' },
+                { src: SOCKETIO, title: 'Socket.IO'},
+                { src: GOOGLE_CLOUD, title: 'GCP' },
+                { src: NODE, title: 'Node' },
+                { src: AWS, title: 'AWS'},
+                { src: CSS, title: 'CSS' },
+            ],
+        },
         {
             icon: TREEGEN_ICON,
             title: 'Expression Trees',
