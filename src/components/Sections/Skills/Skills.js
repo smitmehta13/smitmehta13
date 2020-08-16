@@ -3,6 +3,7 @@ import TechBar from './TechBar'
 import PYTHON from '../../../assets/images/python.svg'
 import JAVASCRIPT from '../../../assets/images/javascript.svg'
 import CPLUS from '../../../assets/images/c++.svg'
+import GOLANG from '../../../assets/images/golang.svg'
 import HTML from '../../../assets/images/html.svg'
 import CSS from '../../../assets/images/css.svg'
 import JAVA from '../../../assets/images/java.svg'
@@ -125,19 +126,19 @@ function Skills() {
     }, [])
 
     const LANGUAGES = [
-        { type: 'normal', src: JAVASCRIPT, title: 'JavaScript', level: 92, color: '#757575' },
-        { type: 'normal', src: JAVA, title: 'Java', level: 72, color: '#ffb74d' },
-        { type: 'normal', src: CSS, title: 'CSS', level: 84, color: '#039be5' },
-        { type: 'normal', src: HTML, title: 'HTML', level: 85, color: '#ef5350' },
-        { type: 'normal', src: PYTHON, title: 'Python', level: 91, color: '#ffeb3b' },
-        { type: 'normal', src: CPLUS, title: 'C++', level: 78, color: '#5c6bc0' },
+        { type: 'normal', src: JAVASCRIPT, title: 'JavaScript', level: 95, color: '#757575' },
+        { type: 'normal', src: JAVA, title: 'Java', level: 75, color: '#ffb74d' },
+        { type: 'normal', src: CSS, title: 'CSS', level: 90, color: '#039be5' },
+        { type: 'normal', src: HTML, title: 'HTML', level: 90, color: '#ef5350' },
+        { type: 'normal', src: PYTHON, title: 'Python', level: 93, color: '#ffeb3b' },
+        { type: 'normal', src: CPLUS, title: 'C++', level: 82, color: '#5c6bc0' },
     ]
 
     const TOOLS = [
         { type: 'normal', src: REACT, title: 'React', level: 90, color: '#263238' },
         { type: 'normal', src: FLASK, title: 'Flask', level: 85, color: '#ffffff' },
         { type: 'normal', src: MYSQL, title: 'MySQL', level: 65, color: '#ff6e40' },
-        { type: 'normal', src: NODE, title: 'Node', level: 72, color: '#4caf50' },
+        { type: 'normal', src: NODE, title: 'Node', level: 85, color: '#4caf50' },
         { type: 'normal', src: JQUERY, title: 'jQuery', level: 80, color: '#0d47a1' },
         { type: 'normal', src: GIT, title: 'Git', level: 77, color: '#333' },
     ]

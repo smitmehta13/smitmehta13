@@ -117,15 +117,15 @@ class Home extends React.Component {
                     </div>
                     <div>
                         <div className="justify-center appear-button">
-                            <a href={RESUME} className="home-main-button">
+                            <a rel="noopener noreferrer" target="_blank" href={RESUME} className="home-main-button">
                                 <i><FaFileAlt /></i>&nbsp;
                                 Resume
                         </a>
-                            <a href="https://github.com/lnogueir" className="home-main-button">
+                            <a rel="noopener noreferrer" target="_blank" href="https://github.com/lnogueir" className="home-main-button">
                                 <i><FaGithub /></i>&nbsp;
                                 Github
                         </a>
-                            <a href="mailto: lnogueir@uwaterloo.ca" className="home-main-button">
+                            <a rel="noopener noreferrer" target="_blank" href="mailto: lnogueir@uwaterloo.ca" className="home-main-button">
                                 <i><FaEnvelope /></i>&nbsp;
                                 Email
                         </a>

@@ -1,34 +1,13 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Paper from '@material-ui/core/Paper'
-import Fab from '@material-ui/core/Fab'
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
-import ExpandLessIcon from '@material-ui/icons/ExpandLess'
+import ExpandButton from '../../ExpandButton'
 import YOUTUBE_ICON from '../../../assets/images/youtube.svg'
 import GITHUB_ICON from '../../../assets/images/github.svg'
 import DEVPOST_ICON from '../../../assets/images/devpost.png'
 import LINK_ICON from '../../../assets/images/link.svg'
 import $ from 'jquery'
-import Swal from 'sweetalert2'
 
 function ProjectCard(props) {
-    const [isMore, setIsMore] = useState(false)
-
-    const handleToggleContent = e => {
-        let project = $(e.target).closest('.project')
-        project.find('.more-content').css('height', isMore ? '0%' : '100%')
-        setIsMore(!isMore)
-    }
-
-    const handle_lucasnogueira = e => {
-        e.preventDefault()
-        Swal.fire({
-            type: 'error',
-            title: '<strong>Error</strong>',
-            html: '<div align="left"><b>RecursionError</b>: maximum recursion depth exceeded.<br/>For more information visit <a href="https://lucasnogueira.ca">lucasnogueira.ca</a></div>',
-        })
-        return false;
-    }
-
     return (
         <Paper className="project">
             <div className="project-head">
@@ -97,11 +76,6 @@ function ProjectCard(props) {
                         {
                             props.project.links.website &&
                             <a
-                                onClick={
-                                    props.project.links.website === 'https://lucasnogueira.ca' ?
-                                        handle_lucasnogueira :
-                                        () => null
-                                }
                                 title="View website"
                                 href={props.project.links.website}
                             >
@@ -111,23 +85,12 @@ function ProjectCard(props) {
                     </div>
                 }
                 <div className="project-expand">
-                    <Fab
-                        onClick={handleToggleContent}
-                        variant="extended"
-                    >
-                        {
-                            isMore ?
-                                <React.Fragment>
-                                    less
-                                    <ExpandLessIcon />
-                                </React.Fragment>
-                                :
-                                <React.Fragment>
-                                    more
-                                    <ExpandMoreIcon />
-                                </React.Fragment>
-                        }
-                    </Fab>
+                    <ExpandButton expandText={"more"} shrinkText={"less"} 
+                        onClick={(e, isExpanded) => {
+                            const project = $(e.target).closest('.project')
+                            project.find('.more-content').css('height', isExpanded ? '0%' : '100%')
+                        }}
+                    />
                 </div>
             </div>
         </Paper>
