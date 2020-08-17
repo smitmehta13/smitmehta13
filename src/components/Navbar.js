@@ -1,6 +1,5 @@
 import React from 'react';
 import { TiHomeOutline } from 'react-icons/ti';
-import { AiOutlineBarChart } from 'react-icons/ai'
 import { MdAccessibility } from 'react-icons/md'
 import { IoIosRocket } from 'react-icons/io'
 import { FaBlackTie } from 'react-icons/fa';
@@ -8,7 +7,7 @@ import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import Fab from '@material-ui/core/Fab'
 import $ from 'jquery';
 
-const ID_MAPPING = ['home', 'skills', 'experience', 'projects', 'me']
+const ID_MAPPING = ['home', 'projects', 'experience', 'me']
 
 class Navbar extends React.Component {
     static is_active = true
@@ -110,12 +109,12 @@ class Navbar extends React.Component {
                             <b className="navicon-name">Home</b>
                         </div>
                     </a>
-                    <a href="#skills" onClick={this.gotoTab} title="Skills">
+                    <a href="#projects" onClick={this.gotoTab} title="Projects">
                         <div style={{ animationDelay: '1.75s' }} className="icon-wrapper appear">
                             <i className="navbar-icon">
-                                <AiOutlineBarChart />
+                                <IoIosRocket />
                             </i>
-                            <b className="navicon-name">Skills</b>
+                            <b className="navicon-name">Projects</b>
                         </div>
                     </a>
                     <a href="#experience" onClick={this.gotoTab} title="Work Experience">
@@ -126,16 +125,8 @@ class Navbar extends React.Component {
                             <b className="navicon-name">Work</b>
                         </div>
                     </a>
-                    <a href="#projects" onClick={this.gotoTab} title="Projects">
-                        <div style={{ animationDelay: '2.25s' }} className="icon-wrapper appear">
-                            <i className="navbar-icon">
-                                <IoIosRocket />
-                            </i>
-                            <b className="navicon-name">Projects</b>
-                        </div>
-                    </a>
                     <a href="#me" onClick={this.gotoTab} title="Me">
-                        <div style={{ animationDelay: '2.5s' }} className="icon-wrapper appear">
+                        <div style={{ animationDelay: '2.25s' }} className="icon-wrapper appear">
                             <i className="navbar-icon">
                                 <MdAccessibility />
                             </i>

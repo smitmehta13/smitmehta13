@@ -2,8 +2,8 @@ import React from 'react'
 import MeIntro from './MeIntro'
 import MeOrigins from './MeOrigins'
 import MeHS from './MeHS'
-import MeAdulting from './MeAdulting'
-import MeWindup from './MeWindup'
+import MeHobbies from './MeHobbies'
+import MeFamily from './MeFamily'
 
 
 function Me() {
@@ -18,14 +18,14 @@ function Me() {
                     <section id="me-origins" data-aos="fade-left">
                         <MeOrigins />
                     </section>
+                    <section id="me-hobbies" data-aos="fade-right">
+                        <MeHobbies />
+                    </section>
                     <section id="me-hs" data-aos="fade-right">
                         <MeHS />
                     </section>
-                    <section id="me-adulting" data-aos="fade-right">
-                        <MeAdulting />
-                    </section>
-                    <section id="me-windup" data-aos-mirror="false" data-aos="fade-up">
-                        <MeWindup />
+                    <section id="me-family" data-aos-mirror="false" data-aos="fade-up">
+                        <MeFamily />
                     </section>
                 </div>
             </div>

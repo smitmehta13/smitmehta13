@@ -7,10 +7,10 @@
 }
 
 body{
-  background: -webkit-linear-gradient(left,#282c34, #282c34, #4b6cb7, #D6A4A4, rgb(68, 130, 172),#757F9A,  #71B280,  #ffe082);
-  background: linear-gradient(90deg,#282c34, #282c34, #4b6cb7, #D6A4A4, rgb(68, 130, 172),#757F9A,  #71B280,  #ffe082);
+  // background: -webkit-linear-gradient(left,#282c34, #282c34, #4b6cb7, #ffe082,#D6A4A4, rgb(68, 130, 172), #71B280,  #D6A4A4,#757F9A);
+  background: linear-gradient(90deg,#282c34, #282c34, #4b6cb7, rgb(68, 130, 172), #D6A4A4 , rgb(68, 130, 172), #71B280,#ffe082, #ffe082, #ffe082);
   background-position: 0%;
-  background-size: 700%;
+  background-size: 1000%;
   -webkit-transition: all 1s ease;
   transition:all 1s ease;
   outline: none;
@@ -171,6 +171,11 @@ section.experience-section, section.skills-section, section.projects-section, se
 @media only screen and (max-width:635px){
   h5.tech-title{
     font-size: calc(.9rem + .5vw);
+  }
+
+  div.experience-body{
+    font-size: calc(.9em + .5vw);
+    line-height: calc((.9em + .5vw)*1.15);
   }
 
   div.company-details{
@@ -1182,6 +1187,10 @@ h1, h2, h3, h4, h5{
     padding:3px;
   }
 
+  img.skill-tech-icon.skill-golang-responsive{
+    right: -15px;
+  }
+
   img.skill-tech-icon{
     height: 3.5em;
     right: -20px;
@@ -1330,6 +1339,10 @@ span.school-title{
   right:-27.9px;
   position: absolute;
   z-index:1000;
+}
+
+.skill-tech-icon.skill-golang-responsive{
+  right:-20px;
 }
 
 .skill-tech-special{
@@ -1774,39 +1787,8 @@ div.me-intro-wrap, div.me-origins-wrap{
   height: auto;
   width: 100%;
   outline: none;
-}
-
-@media only screen and (max-width:765px){
-  p.guitar-video-title{
-    padding: 15px 7vw;  
-  }
-}
-
-.guitar-video-title{
-  margin-top: 5px;
-  padding: 15px 17.2vw;
-  margin: 0px;
-  font-size: calc(.65em + .65vw);
-  font-weight: 200;
-  color: #333;
-  text-align: left;
-}
-
-.me-conclusion{
-  margin: 30px 10px;
-}
-
-.me-conclusion > div{
-  margin: 4px;
-}
-
-.me-conclusion > h1{
-  padding: 30px 7.5vw 0px 7.5vw;
-  font-weight: 900;
-  font-size: calc(1.1em + .5vw);
-  color: #333;
-  border-bottom: 3px solid rgba(0,0,0, .2);
-  display: inline-block;
+  border-radius: 0.4rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .rotating-home-text{

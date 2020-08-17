@@ -6,9 +6,9 @@ import $ from 'jquery';
 const SECTIONS_MAP = [
     { id: 'intro', title: 'Intro' },
     { id: 'origins', title: 'Origins' },
+    { id: 'hobbies', title: 'Hobbies' },
     { id: 'hs', title: 'High School' },
-    { id: 'adulting', title: 'Adulting' },
-    { id: 'windup', title: 'Windup' },
+    { id: 'family', title: 'Family' },
 ]
 
 function MeSectionBreadcrumbs(props) {

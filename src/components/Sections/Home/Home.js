@@ -137,11 +137,11 @@ class Home extends React.Component {
                                 data-period="1400"
                                 data-rotate={`
                                 [
-                                    "Software Developer 💻", 
+                                    "Software Engineer 💻", 
                                     "Ping Ponger 🏓", 
-                                    "Guitarrist 🎸",
-                                    "Runner 🥇", 
-                                    "Bookworm 📖"
+                                    "Runner 🥇",
+                                    "Toronto Raptors Fan 🏀",
+                                    "Guitarrist 🎸"
                                 ]
                                 `}
                             />

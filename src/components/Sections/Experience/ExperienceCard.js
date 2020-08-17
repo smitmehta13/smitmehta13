@@ -78,6 +78,9 @@ function ExperienceCard(props) {
                                     experience.find('.company-tech').css('flex-direction', !isExpanded ? 'column' : 'row')
                                     experience.toggleClass('responsive-experience-card')
                                     experience.find('.experience-body').toggleClass('responsive-experience-body')
+                                    $('html, body').animate({
+                                        scrollTop: experience.offset().top
+                                    }, 500);
                                 }}
                             />
                         </div>

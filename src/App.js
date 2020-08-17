@@ -4,7 +4,6 @@ import Navbar from './components/Navbar';
 import Home from './components/Sections/Home/Home';
 import Experience from './components/Sections/Experience/Experience';
 import Projects from './components/Sections/Projects/Projects';
-import Skills from './components/Sections/Skills/Skills';
 import Me from './components/Sections/Me/Me';
 import Footer from './components/Footer';
 import AOS from 'aos';
@@ -16,7 +15,7 @@ function App() {
     AOS.init({ mirror: true, offset: 172 })
     return () => null
   }, [])
-  const SECTIONS_MAP = [<Home />, <Skills />, <Experience />, <Projects />, <Me />]
+  const SECTIONS_MAP = [<Home />, <Projects />, <Experience />, <Me />]
   const [currentTab, setCurrentTab] = React.useState(0)
 
   const gotoTab = tab_index => {
