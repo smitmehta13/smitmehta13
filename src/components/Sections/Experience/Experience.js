@@ -90,7 +90,7 @@ function Experience(props) {
                     >
                         The Weather Network is the <strong>#1</strong> weather company in Canada with <strong>4.2M</strong> unique downloads on apps and <strong>113M</strong> average monthly page views across all platforms.
                         <br/> <br/>
-                        During my 4 month internship there, I was part of an agile team that was responsible for the forecast engine of the company's services. <br/>
+                        During my 4 month internship there, I was part of an <strong>agile</strong> team responsible for the forecast engine of the company's services. <br/>
                         With the <strong>Go</strong> programming language, my team and I worked on deprecating <strong>monolithic C++</strong> legacy systems used to process <a rel="noopener noreferrer" target="_blank" className="link" href="https://en.wikipedia.org/wiki/Digital_elevation_model">DEM</a> and <a rel="noopener noreferrer" target="_blank" className="link" href="https://en.wikipedia.org/wiki/GRIB">GRIB</a> files originated from <a className="link" rel="noopener noreferrer" target="_blank" href="https://en.wikipedia.org/wiki/Geographic_information_system">GIS</a> teams.
                         <br/>
                         Following <strong>microservices</strong> architecture, I developed <strong>loosely coupled</strong> packages and modules to <strong>concurrently</strong> process those weather files and serve the frontend applications efficiently.

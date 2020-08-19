@@ -79,8 +79,8 @@ function Skills() {
     ]
 
     return (
-        <section className="skills-section animated mt10 mb40">
-            <h1 className="section-title"><span role="img" aria-label="emoji">💻</span> Hacker Stats <span role="img" aria-label="emoji">👨‍💻</span></h1>
+        <section className="skills-section animated     mb30">
+            <h1 className="me-section-subtitle"><span role="img" aria-label="emoji">💻</span> <span style={{opacity: 0.5}}>Hacker Stats</span> <span role="img" aria-label="emoji">👨‍💻</span></h1>
             <div>
                 <div className="mt30">
                     <div align="center" style={{ height: '40vh' }} className="graphs-wrap justify-around flex-wrap">

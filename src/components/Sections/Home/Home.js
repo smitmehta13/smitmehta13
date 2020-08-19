@@ -138,10 +138,10 @@ class Home extends React.Component {
                                 data-rotate={`
                                 [
                                     "Software Engineer 💻", 
-                                    "Ping Ponger 🏓", 
-                                    "Runner 🥇",
+                                    "Guitarrist 🎸",
                                     "Toronto Raptors Fan 🏀",
-                                    "Guitarrist 🎸"
+                                    "Runner 🥇",
+                                    "Ping Ponger 🏓"
                                 ]
                                 `}
                             />
