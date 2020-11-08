@@ -14,9 +14,6 @@ class Home extends React.Component {
     }
 
     componentDidMount = () => {
-        if (window.innerWidth > 645) {
-            $('html, body').css('overflow', 'hidden')
-        }
         $('body').css('background-color', '#282c34')
         if (Home.is_first_render) {
             $('.appear-button').css('animation-delay', '3s');
