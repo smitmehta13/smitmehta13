@@ -19,7 +19,7 @@ function MeHS(props) {
                     <p>
                         <br />
                         High School was quite an experience for me.<br />
-                        I attended one of the best High Schools in Salvador, called <a rel="noopener noreferrer" target="_blank" className="link" href="http://www.csp-ba.com.br/">Colégio São Paulo</a>, and had math and sciences classes throughout all years. <br/>
+                        I attended one of the best High Schools in Salvador, <a rel="noopener noreferrer" target="_blank" className="link" href="http://www.csp-ba.com.br/">Colégio São Paulo</a>, and had math and sciences classes throughout all years. <br/>
                         In my first year of HS, I quickly developed a passion for chemistry, achieved good marks and believed I was going to become a Chemical Engineer.
                         Once I learned about organic chemistry, all the chemistry between me and the subject had faded <span role="img" aria-label="emoji">😂</span>.
                         <br/> <br/>
@@ -61,7 +61,7 @@ function MeHS(props) {
                 <div className="me-body">
                     <p>
                         Luckily, my mom's brother, who happens to be a software developer, lives in Waterloo, Canada and told me very good things about the University Of Waterloo. At 16 years of age, I had set a new goal: attend UWaterloo Engineering. <br />
-                        I focused on achieving good scores on international exams such as the <a rel="noopener noreferrer" target="_blank" className="link" href="https://www.ieltscanada.ca/">IELTS</a> and <a rel="noopener noreferrer" className="link" href="https://collegereadiness.collegeboard.org/sat">SAT</a>. 
+                        I focused on achieving good scores on international exams such as the <a rel="noopener noreferrer" target="_blank" className="link" href="https://www.ieltscanada.ca/">IELTS</a> and <a rel="noopener noreferrer" target="_blank" className="link" href="https://collegereadiness.collegeboard.org/sat">SAT</a>. 
                         I wasn't sure which program I wanted, but I knew it would be engineering in some shape or form, hence I worried mostly about maths and physics and at the end applied for Electrical Engineering. Later I'd switch to Computer.
                         <br/> <br/>
                         With an average of <strong>93%</strong>, I was accepted to attend the Electrical Engineering Class of 2023 at the University Of Waterloo!
