@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaFileAlt, FaGithub, FaEnvelope } from 'react-icons/fa'
+import { FaFileAlt, FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 import RESUME from '../../../assets/docs/resume.pdf'
 import BackgroundGame from './BackgroundGame';
 import $ from 'jquery'
@@ -117,15 +117,19 @@ class Home extends React.Component {
                             <a rel="noopener noreferrer" target="_blank" href={RESUME} className="home-main-button">
                                 <i><FaFileAlt /></i>&nbsp;
                                 Resume
-                        </a>
+                            </a>
                             <a rel="noopener noreferrer" target="_blank" href="https://github.com/lnogueir" className="home-main-button">
                                 <i><FaGithub /></i>&nbsp;
                                 Github
-                        </a>
+                            </a>
+                            <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/lnogueir/" className="home-main-button">
+                                <i style={{position: 'relative', top: 1}}><FaLinkedin /></i>&nbsp;
+                                Linkedin
+                            </a>
                             <a rel="noopener noreferrer" target="_blank" href="mailto: lnogueir@uwaterloo.ca" className="home-main-button">
                                 <i><FaEnvelope /></i>&nbsp;
                                 Email
-                        </a>
+                            </a>
                         </div>
                         <div className="rotating-home-text">
                             <span>{"//"}&nbsp;</span>
