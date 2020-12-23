@@ -114,22 +114,22 @@ class Home extends React.Component {
                     </div>
                     <div>
                         <div className="justify-center appear-button">
-                            <a rel="noopener noreferrer" target="_blank" href={RESUME} className="home-main-button">
-                                <i><FaFileAlt /></i>&nbsp;
-                                Resume
-                            </a>
-                            <a rel="noopener noreferrer" target="_blank" href="https://github.com/lnogueir" className="home-main-button">
-                                <i><FaGithub /></i>&nbsp;
-                                Github
-                            </a>
-                            <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/lnogueir/" className="home-main-button">
-                                <i style={{position: 'relative', top: 1}}><FaLinkedin /></i>&nbsp;
-                                Linkedin
-                            </a>
-                            <a rel="noopener noreferrer" target="_blank" href="mailto: lnogueir@uwaterloo.ca" className="home-main-button">
-                                <i><FaEnvelope /></i>&nbsp;
-                                Email
-                            </a>
+                            <div>
+                                <a rel="noopener noreferrer" target="_blank" href={RESUME} className="home-main-button">
+                                    <span><i><FaFileAlt /></i>&nbsp;Resume</span>
+                                </a>
+                                <a rel="noopener noreferrer" target="_blank" href="https://github.com/lnogueir" className="home-main-button">
+                                    <span><i><FaGithub /></i>&nbsp;Github</span>
+                                </a>
+                            </div>
+                            <div>
+                                <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/lnogueir/" className="home-main-button">
+                                    <span><i style={{position: 'relative', top: 1}}><FaLinkedin /></i>&nbsp;Linkedin</span>
+                                </a>
+                                <a rel="noopener noreferrer" target="_blank" href="mailto: lnogueir@uwaterloo.ca" className="home-main-button">
+                                    <span><i><FaEnvelope style={{position: 'relative', top: 2}}/></i>&nbsp;Email</span>
+                                </a>
+                            </div>
                         </div>
                         <div className="rotating-home-text">
                             <span>{"//"}&nbsp;</span>

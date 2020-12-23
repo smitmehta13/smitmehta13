@@ -1299,10 +1299,15 @@ span.school-title{
             animation:appear-button
 }
 
-.home-main-button > i{
+.home-main-button i{
   -webkit-transition-delay: 0.03s;
           transition-delay: 0.03s;
   font-weight: 900;
+}
+
+.home-main-button span {
+  width: 100px;
+  display: inline-block;
 }
 
 .home-main-button:hover{
