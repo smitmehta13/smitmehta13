@@ -4,6 +4,10 @@ import MeImage from './MeImage'
 import ME from '../../../assets/images/me2.png'
 
 function MeIntro() {
+    const today = new Date();
+    const birthDate = new Date("02/28/2000");
+    const myAgeInDays = (today.getTime() - birthDate.getTime()) / (1000 * 3600 * 24);
+    const myAge = Math.floor(myAgeInDays / 365);
     return (
         <div className="me-intro-wrap">
             <MeImage alt="Intro Profile" src={ME}>
@@ -16,7 +20,7 @@ function MeIntro() {
                     <br />
                     Hi and welcome to my home on the internet!<br />
                     As you've guessed, my name is Lucas, more specifically Lucas Nogueira Serafim de Araujo. I know, it's huge. <br />
-                    I am 20 years old and I currently pursue a Computer Engineering degree at the University Of Waterloo with hopes to graduate in 2023. <br /><br />
+                    I am {myAge} years old and I currently pursue a Computer Engineering degree at the University Of Waterloo with hopes to graduate in 2023. <br /><br />
                     This section, unlike the others, it's not focused on my work/academic related accomplishments. It's for you to get to know me better and learn about my interests and what I do for fun! Hopefully you can relate to me in some way 😃.<br /><br />
                     Make sure to connect with me on <a rel="noopener noreferrer" target="_blank" className="link" href="https://github.com/lnogueir">Github</a>, <a rel="noopener noreferrer" target="_blank" className="link" href="https://www.linkedin.com/in/lnogueir/">Linkedin</a> and <a rel="noopener noreferrer" target="_blank" className="link" href="https://www.instagram.com/lucasnogueira021/">Instagram</a>!
                 </p>
