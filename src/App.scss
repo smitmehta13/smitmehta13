@@ -3,7 +3,7 @@
 }
 
 *{
-  font-family:avenir, 'Century Gothic','Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+  font-family: 'Montserrat', sans-serif, Tahoma, Sans-Serif, 'Century Gothic','Lato', 'Lucida Grande', 'Lucida Sans Unicode',;
 }
 
 body{
@@ -94,8 +94,8 @@ h1.me-section-subtitle{
 h1.section-title{
  margin: 20px;
  margin-top: 30px;
- font-weight:500;
- text-shadow: 0 0 3px lightgray;
+ font-weight:900;
+ text-shadow: 0 0 2px lightgray;
  font-size:calc(1.75em + .5vw);
  color:white;
 }
@@ -270,6 +270,10 @@ section.experience-section, section.skills-section, section.projects-section, se
   margin: 12px 2px;
   text-align:center;
   font-size: calc(.8em + .5vw);
+}
+
+.company-location {
+  font-weight: 300;
 }
 
 .experience-card-right{
@@ -1073,7 +1077,7 @@ div.icon-wrapper > i.navbar-icon{
 span.lucas-name-title{
   font-size: calc(17px + 1.3vw) !important;
   text-shadow: 0 0 3px lightgray;
-  min-width:calc(265px + 14vw); 
+  min-width:calc(265px + 14vw);
 }
 
 .animated{
@@ -1501,7 +1505,7 @@ span.school-title{
 }
 
 .project-head-subtitle{
-  font-weight:900;
+  font-weight:600;
   font-size: .7em;
   color: #616161;
 }

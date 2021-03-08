@@ -35,10 +35,10 @@ function ExperienceCard(props) {
                         </div>
                         <div className="company-details">
                             <div>
-                                <a rel="noopener noreferrer" target="_blank" className="link" href={`${props.prefered_url}`}><span>@{props.company}</span></a>
+                                <a rel="noopener noreferrer" target="_blank" className="link" href={`${props.prefered_url}`}><span>#{props.company}</span></a>
                             </div>
                             <div>
-                                <span>{props.location}</span>
+                                <span className="company-location">{props.location}</span>
                             </div>
                         </div>
                         <div className="mt20 mb20">

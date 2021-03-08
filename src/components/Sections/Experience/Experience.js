@@ -79,7 +79,7 @@ function Experience(props) {
                 <div>
                 <ExperienceCard
                         logo_src={THEWEATHERNETWORK_LOGO}
-                        company="WeatherNetwork"
+                        company="TWN"
                         company_urls={PELMOREX_URLS}
                         prefered_url="https://www.theweathernetwork.com/"
                         title="Software Developer in Test, Infrastructure"
@@ -106,7 +106,7 @@ function Experience(props) {
                 <div>
                     <ExperienceCard
                         logo_src={AGF_LOGO}
-                        company="AGFInvestments"
+                        company="AGF"
                         company_urls={AGF_URLS}
                         prefered_url="https://www.agf.com"
                         title="Junior Web Developer"
