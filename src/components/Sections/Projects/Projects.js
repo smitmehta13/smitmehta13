@@ -344,7 +344,7 @@ function Projects(props) {
             short_description: "My personal website and home on the internet",
             links: {
                 github: 'https://github.com/lnogueir/lucasnogueira',
-                website: 'https://lucasnogueira.ca'
+                website: 'https://lnogueir.me'
             },
             tech: [
                 { src: JAVASCRIPT, title: 'JavaScript' },
