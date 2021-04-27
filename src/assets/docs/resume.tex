@@ -1,0 +1,175 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[hidelinks]{resume} % Use the custom resume.cls style
+\usepackage{fontawesome}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+
+
+\protected\def\github{https://github.com/lnogueir}
+\protected\def\linkedin{https://www.linkedin.com/in/lnogueir/}
+\protected\def\website{https://lnogueir.me}
+\protected\def\stackoverflow{https://stackoverflow.com/users/11348579/lnogueir}
+
+ 
+\urlstyle{same}
+\usepackage[left=0.7in,top=0.55in,right=0.7in,bottom=0.55in]{geometry} %
+
+\usepackage{enumitem}
+
+\newlist{bulletpoints}{enumerate}{1}
+\setlist[bulletpoints,1]{
+  label={$\bullet$},
+  leftmargin=*,
+  align=left,
+  labelsep=2mm,
+}
+
+\newcommand{\tab}[1]{\hspace{\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+\name{L\lowercase{ucas} N\lowercase{ogueira}\vspace{-.25cm}} % Your name
+
+\address{3A Computer Engineering, University Of Waterloo}
+\address{\href{\website}{\faLink \hspace{0.15px} lnogueir.me} \hspace{2px} \href{\github}{\faGithub \hspace{0.15px} lnogueir} \hspace{2px} \href{\linkedin}{\faLinkedin \hspace{0.15px} lnogueir} \hspace{2px} \href{\stackoverflow}{\faStackOverflow \hspace{0.15px} lnogueir} \hspace{2px} \href{mailto: lnogueir@uwaterloo.ca}{\faEnvelope \hspace{0.15px} lnogueir@uwaterloo.ca}} \\  % Your phone number and email
+
+\makeatletter
+\newcommand{\globalcolor}[1]{%
+  \color{#1}\global\let\default@color\current@color
+}
+\makeatother
+
+\definecolor{niceblack}{HTML}{333333}
+
+\AtBeginDocument{\globalcolor{niceblack}}
+
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\vspace{-.3cm}
+\begin{rSection}{\faBarChart \hspace{0.25px} Skills}
+\begin{rSubsection}{Languages | \normalfont{C/C++, Python, Go, JavaScript/Node.js, HTML/CSS, Java, Bash, Groovy, Assembly}{}}{}{}
+
+\end{rSubsection}
+\vspace{-.2cm}
+\begin{rSubsection}{Tech | \normalfont{WebRTC, Git, Docker, Mongo, FFmpeg, AWS, GStreamer, Redis, React, Jenkins, Socket.io, MySQL}{}}{}{}
+
+\end{rSubsection}
+
+\end{rSection}
+
+\vspace{-.20cm}
+
+\begin{rSection}{\faBlackTie \hspace{0.25px} Experience}
+\begin{rSubsection}{\href{https://www.rossvideo.com/products-services/infrastructure/softgear-software-based-signal-processing-platform/}{Ross Video \textcolor{darkgray}{| Software Engineer, \underline{SoftGear}}}}{\textcolor{gray}{January 2021 - Present}}{}
+
+    \begin{bulletpoints}
+        \vspace{-.10cm}
+        \item Implemented \textbf{WebRTC} client using \textbf{pure C++ chromium-based native code} API to publish and process multimedia streams to and from \textbf{SDI $\leftrightarrow$ \href{https://antmedia.io/}{\underline{Ant Media Server}}}, achieving \textbf{ultra-low latency of \textasciitilde0.6s}.
+        \vspace{-.13cm}
+        \item Engineered \textbf{multithreaded} media pipelines with \textbf{hardware acceleration} using a \textbf{GPU and \href{https://libav.org/}{\underline{libav}}} to perform H264 encoding/decoding of/to raw NV12-format video efficiently, dropping CPU usage by \textbf{over 35\%}.
+        \vspace{-.10cm}
+    \end{bulletpoints}   
+    \vspace{-.25cm}
+\end{rSubsection}
+\begin{rSubsection}{\href{https://www.theweathernetwork.com/}{The Weather Network \textcolor{darkgray}{| Software Developer in Test, Infrastructure}}}{\textcolor{gray}{May 2020 - August 2020}}{}
+        \par
+        \begin{bulletpoints}
+            \vspace{-.10cm}
+            \item Contributed to deprecation of \textbf{C++} monolithic forecast engine by developing \textbf{loosely coupled Go libraries} to \textbf{concurrently} process weather files serving \textbf{+4 million unique users}.
+             \vspace{-.13cm}
+            \item Performed \textbf{geospatial queries on MongoDB} to process coordinate messages from \textbf{AWS SQS} and \textbf{S3} events on \textbf{8GB} data sets of granular precision weather data leading to nearly \textbf{30\% performance upgrade}.
+            \vspace{-.13cm}
+             \item Used \textbf{Jenkins, Docker, and K8s} to standardize the \textbf{CI/CD} approach on the company for \textbf{all backend teams} by engineering a configurable centralized \textbf{deployment pipeline} improving infrastructure maintainability.
+             \vspace{-.25cm}
+        \end{bulletpoints}
+\end{rSubsection}
+\begin{rSubsection}{\href{https://github.com/jeverd/lecture-experience}{Liteboard.io \textcolor{darkgray}{| Founder \& Software Engineer | +300 stars on \underline{Github}}}}{\textcolor{gray}{April 2020 - October 2020}}{}
+        \par
+        \begin{bulletpoints}
+            \vspace{-.10cm}
+            \item Built backend infrastructure, using \textbf{Janus SFU implementation}, capable of supporting \textbf{multistream conferences} with up to \textbf{50 participants} per room powered by \textbf{WebRTC, Redis, Node and Express}.
+             \vspace{-.13cm}
+            \item Implemented \textbf{WebSocket-based} chat rooms with support for image/document attachments to enable concurrent messaging system between students and lecturers in the platform.
+            \vspace{-.25cm}
+        \end{bulletpoints}
+\end{rSubsection}
+\begin{rSubsection}{\href{https://www.agf.com/ca/en/index.jsp}{AGF Investments \textcolor{darkgray}{| Junior Web Developer}}}{\textcolor{gray}{September 2019 - December 2019}}{}
+        \par
+        \begin{bulletpoints}
+            \vspace{-.10cm}
+            \item Made multiple \textbf{JSP} pages and \textbf{Java backend} server endpoints interacting with \textbf{SQL databases} to handle users/staff messaging requests and secure file uploads that \textbf{impacted over 60 000 people}.
+            \vspace{-.13cm}
+             \item Implemented \textbf{React} into \textbf{Java Spring} to migrate off legacy JSPs and jQuery Plugins which \textbf{reduced bundle size by approximately 15\%}.
+             \vspace{-.25cm}
+        \end{bulletpoints}
+\end{rSubsection}
+\begin{rSubsection}{\href{https://cs.uwaterloo.ca/}{University Of Waterloo} \textcolor{darkgray}{| \href{https://www.student.cs.uwaterloo.ca/~cs138/}{CS138 Teaching Assistant}}}{\textcolor{gray}{January 2019 - April 2019}}{}
+
+    \begin{bulletpoints}
+        \vspace{-.10cm}
+        \item Conducted lectures and office-hours to teach \textbf{Data Structures and Object Oriented Programming} in \textbf{C/C++} for Software Engineering students and developed \textbf{Bash/Python} scripts for auto-marking assignments.
+        \vspace{-.25cm}
+    \end{bulletpoints}   
+
+\end{rSubsection}
+
+\end{rSection}
+
+\vspace{-.05cm}
+%--------------------------------------------------------------------------------
+%    Projects
+%-----------------------------------------------------------------------------------------------
+
+
+\begin{rSection}{\faRocket \hspace{0.25px} Projects | \small{more on \href{\website}{\underline{lnogueir.me}}}}
+
+\begin{rSubsection}{\href{https://github.com/lnogueir/expression-tree-gen}{Arithmetic Expression Tree Simulator - Side Project \faGithub} |
+\href{https://lnogueir.github.io/expression-tree-gen/}{\underline{Demo here}}}{\textcolor{darkgray}{\textbf{Tech Stack} | JavaScript, HTML, CSS}}{}
+\par
+    \begin{bulletpoints}
+    \vspace{-.10cm}
+        \item A web app that, with animation, generates \textbf{binary trees} of arithmetic expressions with pure JavaScript by applying \textbf{Knuth's layout algorithm} to assign coordinate to nodes without collision of branches.
+        \vspace{-.13cm}
+        \item Utilized \textbf{Dijkstra's Shunting-yard algorithm} to parse expression from infix to its postfix form in order to \textbf{asynchronously and recursively} create animated tree structure simulation.
+        \vspace{-.25cm}
+    \end{bulletpoints}
+\end{rSubsection}
+
+\vspace{.05cm}
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{\faGraduationCap \hspace{0.25px} Education}
+
+{\bf University of Waterloo \textcolor{darkgray}{| B.Eng Computer | GPA: 3.0}} \hfill {\textcolor{gray}{September 2018 - April 2023}} 
+\\ \textcolor{darkgray}{\$2000 President's Scholarship Of Distinction}
+\vspace{5px}
+\\{\bf University of Rio de Janeiro (UFRJ) \textcolor{darkgray}{| B.Eng Electrical | GPA: 4.0}} \hfill {\textcolor{gray}{February 2018 - August 2018}} 
+\\ \textcolor{darkgray}{ Placed 6th of all admitted students; Top 5\% student - Calculus 1 Award;}\hfill
+\vspace{.1cm}
+\end{rSection}
+
+
+
+\end{rSection}
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+
+\end{document}
