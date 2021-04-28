@@ -95,9 +95,7 @@
 % Defines the rSection environment for the large sections within the CV
 \newenvironment{rSection}[1]{ % 1 input argument - section name
   \sectionskip
-  \textbf{\Large \fontsize{17}{1}#1} % Section title
-  \sectionlineskip
-  \hrule % Horizontal line
+  \textbf{\Large \fontsize{14}{1}#1} % Section title
   \begin{list}{}{ % List for each individual item in the section
     \setlength{\leftmargin}{0em} % Margin within the section
   }
@@ -111,7 +109,7 @@
 %----------------------------------------------------------------------------------------
 
 \newenvironment{rSubsection}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
- {\bf #1} \hfill {#2} % Bold company name and date on the right
+ {#1} \hfill {#2} % Bold company name and date on the right
  \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
   \\
   {\em #3} \hfill {#4} % Italic job title and location
