@@ -1,6 +1,6 @@
 import React from 'react'
 import Paper from '@material-ui/core/Paper'
-import { FaLinkedinIn, FaApple, FaInstagram, FaTwitter, FaFacebookF } from 'react-icons/fa'
+import { FaLinkedinIn, FaApple, FaInstagram, FaTwitter, FaFacebookF, FaYoutube } from 'react-icons/fa'
 import ExpandButton from '../../ExpandButton'
 import $ from 'jquery'
 
@@ -10,7 +10,8 @@ function ExperienceCard(props) {
         'instagram': <FaInstagram size={33}/>,
         'twitter': <FaTwitter />,
         'facebook': <FaFacebookF />,
-        'apple': <FaApple style={{position: 'relative', bottom: '1.2px', right: '.3px'}} size={30}/>
+        'apple': <FaApple style={{position: 'relative', bottom: '1.2px', right: '.3px'}} size={30}/>,
+        'youtube': <FaYoutube size={30} />
     }
     return (
         <div className="p20">
