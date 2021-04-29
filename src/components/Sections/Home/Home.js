@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaFileAlt, FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
-import RESUME from '../../../assets/docs/resume.pdf'
+import RESUME from '../../../assets/resume/lucas_nogueira_resume.pdf'
 import BackgroundGame from './BackgroundGame';
 import $ from 'jquery'
 
