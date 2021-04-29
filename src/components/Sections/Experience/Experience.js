@@ -1,6 +1,6 @@
 import React from 'react'
 import ExperienceCard from './ExperienceCard'
-import THEWEATHERNETWORK_LOGO from '../../../assets/images/the-weather-network-logo.svg'
+import TWN_LOGO from '../../../assets/images/the-weather-network-logo.svg'
 import AGF_LOGO from '../../../assets/images/agf-logo.svg'
 import UW_LOGO from '../../../assets/images/uw_logo.jpg'
 import JAVA from '../../../assets/images/java.svg'
@@ -26,7 +26,7 @@ import GIT from '../../../assets/images/git.svg'
 
 
 function Experience(props) {
-    const PELMOREX_TECH = [
+    const TWN_TECH = [
         { src: GO, title: 'Golang' },
         { src: KUBERNETES, title: 'Kubernetes' },
         { src: MONGODB, title: 'MongoDB' },
@@ -36,7 +36,7 @@ function Experience(props) {
         { src: AWS, title: 'AWS' },
         { src: GIT, title: 'Git' },
     ]
-    const PELMOREX_URLS = {
+    const TWN_URLS = {
         twitter: 'https://twitter.com/weathernetwork',
         apple: 'https://apps.apple.com/ca/app/the-weather-network/id473299958',
         instagram: 'https://www.instagram.com/weathernetwork',
@@ -78,28 +78,29 @@ function Experience(props) {
             <div align="center" className="experiences-wrap sections-wrap">
                 <div>
                 <ExperienceCard
-                        logo_src={THEWEATHERNETWORK_LOGO}
+                    <ExperienceCard
+                        logo_src={TWN_LOGO}
                         company="TWN"
-                        company_urls={PELMOREX_URLS}
+                        company_urls={TWN_URLS}
                         prefered_url="https://www.theweathernetwork.com/"
                         title="Software Developer in Test, Infrastructure"
                         location="Oakville, Canada"
                         start_date="May, 2020"
                         end_date="August, 2020"
-                        tech={PELMOREX_TECH}
+                        tech={TWN_TECH}
                     >
                         The Weather Network is the <strong>#1</strong> weather company in Canada with <strong>4.2M</strong> unique downloads on apps and <strong>113M</strong> average monthly page views across all platforms.
                         <br/> <br/>
-                        During my 4 month internship there, I was part of an <strong>agile</strong> team responsible for the forecast engine of the company's services. <br/>
-                        With the <strong>Go</strong> programming language, my team and I worked on deprecating <strong>monolithic C++</strong> legacy systems used to process <a rel="noopener noreferrer" target="_blank" className="link" href="https://en.wikipedia.org/wiki/Digital_elevation_model">DEM</a> and <a rel="noopener noreferrer" target="_blank" className="link" href="https://en.wikipedia.org/wiki/GRIB">GRIB</a> files originated from <a className="link" rel="noopener noreferrer" target="_blank" href="https://en.wikipedia.org/wiki/Geographic_information_system">GIS</a> teams.
-                        <br/>
+                        During my 4 month internship, I was part of an <strong>agile</strong> team responsible for the company's forecast engine.
+                        Using <strong>Go</strong>, I worked on deprecating a monolithic <strong>C++</strong> legacy systems used to process <a rel="noopener noreferrer" target="_blank" className="link" href="https://en.wikipedia.org/wiki/Digital_elevation_model">DEM</a> and <a rel="noopener noreferrer" target="_blank" className="link" href="https://en.wikipedia.org/wiki/GRIB">GRIB</a> files originated from <a className="link" rel="noopener noreferrer" target="_blank" href="https://en.wikipedia.org/wiki/Geographic_information_system">GIS</a> teams.
+                        <br/><br/>
                         Following <strong>microservices</strong> architecture, I developed <strong>loosely coupled</strong> packages and modules to <strong>concurrently</strong> process those weather files and serve the frontend applications efficiently.
                         <br/><br/>
-                        Using <strong>AWS</strong>, I created <strong>Lambda</strong> function triggers to handle files arriving in <strong>S3 buckets</strong> and readers for <strong>SQS</strong> queue messages that would feed the <a className="link" rel="noopener noreferrer" target="_blank" href="https://en.wikipedia.org/wiki/European_Centre_for_Medium-Range_Weather_Forecasts">ECMWF</a> and <a className="link" rel="noopener noreferrer" target="_blank" href="https://en.wikipedia.org/wiki/Global_Forecast_System">GFS</a> processor services. 
-                        I engineered database driver libraries to provide a common interface for both <strong>relational and non-relation</strong> database connections and performed <strong>geospatial queries in MongoDB</strong> for the best performance available when querying any type of weather data for any location of the world.
+                        With <strong>AWS</strong> infrastructure, I created <strong>Lambda</strong> function triggers to handle files arriving in <strong>S3 buckets</strong> and readers for <strong>SQS</strong> queue messages that would feed the <a className="link" rel="noopener noreferrer" target="_blank" href="https://en.wikipedia.org/wiki/European_Centre_for_Medium-Range_Weather_Forecasts">ECMWF</a> and <a className="link" rel="noopener noreferrer" target="_blank" href="https://en.wikipedia.org/wiki/Global_Forecast_System">GFS</a> processor services. 
+                        With MongoDB, I performed <strong>geospatial queries</strong> to achieve high performance when querying any type of weather data for any location of the world.
                         <br/><br/>
                         Besides software development, much of my work was focused on <strong>infrastructure automation</strong>. I used <strong>Jenkins, Docker, and Kubernetes</strong> to <strong>standardize the CI/CD</strong> approach on the company for the <strong>Go and Typescript</strong> platforms by engineering a configurable centralized <strong>pipeline</strong> and applied <strong>Blue-Green</strong> deployment strategy to suppress downtime. <br/>
-                        I was also involved in migrating an existing on-premise JFrog Artifactory to the cloud which <strong>facilitated management and reduced cost</strong> of artifacts such as <strong>npm libraries</strong> and snapshot <strong>docker images</strong>.
+                        I was also involved in migrating an existing on-premise JFrog Artifactory to the cloud which <strong>facilitated management and reduced cost</strong> of artifacts such as <strong>npm libraries</strong> and <strong>docker images</strong>.
                         <br/>
                     </ExperienceCard>
                 </div>
@@ -115,10 +116,12 @@ function Experience(props) {
                         end_date="December, 2019"
                         tech={AGF_TECH}
                     >
-                        With its main headquarter located in downtown Toronto, AGF is a company that provides software to facilitate the management of investments and assets for its clients. As a member of the IT Development Services, I played a key role in several projects under AGF.com's repository and I was able to experience the whole <b><strong>development life cycle</strong></b> of the project; from the prototyping phase to production deployment.
+                        With its main headquarter located in downtown Toronto, AGF is a company that provides software to facilitate the management of investments and assets for its clients. 
+                        <br /><br />
+                        As a member of the IT Development Services, I played a key role in several projects under AGF.com's repository and I was able to experience the whole <b><strong>development life cycle</strong></b> of the project; from the prototyping phase to production deployment.
                         <br /><br />
                         Much of my work was done on the inbox page of the application. I worked on improving the previous prototype of the webpage by making it responsive, adding animations with <strong>Javascript and jQuery</strong>, and implementing it in the codebase using <strong>JSPs</strong> and dynamically generated data fetched from <strong>Java</strong> backend and <strong>SQL databases</strong>.
-                        <br/>
+                        <br/><br/>
                         As the project progressed, I had to create <strong>backend endpoints</strong> to handle message submission requests and perform communication between the web page and database. I implemented a <b><strong>file scanning service</strong></b> to ensure the security of BLOB uploads by forwarding them to a <strong>container</strong> running an <a rel="noopener noreferrer" target="_blank" className="link" href="https://en.wikipedia.org/wiki/Internet_Content_Adaptation_Protocol#:~:text=The%20Internet%20Content%20Adaptation%20Protocol,which%20new%20features%20are%20implemented."><b><strong>ICAP server</strong></b></a> with McAffe antivirus software. Although HTTP-like, the mentioned protocol lacks reliable documentation and <a rel="noopener noreferrer" target="_blank" className="link" href="https://github.com/Baekalfen/ICAP-avscan">this repo</a> was essential to my success completing this task.
                         <br/><br/>
                         Besides the mentioned project, another essential contribution I made was to migrate off a complex table of investments, currencies, government ratios, and dates from <b><strong>JSPs to ReactJs</strong></b> components. To perform that, I had to update endpoints which used to return server built <strong>HTML</strong> to return <strong>JSON</strong> data that would be handled in the react application.
@@ -143,10 +146,10 @@ function Experience(props) {
                         As a teaching assistant at UW's Computer Science department, I taught and coordinated <a rel="noopener noreferrer" target="_blank" className="link" href="https://www.student.cs.uwaterloo.ca/~cs138/">CS138</a>, a 1st-year level Software Engineering course, and guaranteed its success with over <b><strong>90%</strong></b> of class approval at the end. <br /><br />
                         In order to promote the course's success, I had to perform both management and coding tasks.
                         <br /> <br/>
-                        I Conducted office hours and review sessions to teach students (who happened to be my age) the core computer science topics of <strong>Data Structures and Object-Oriented Programming</strong> in <b><strong>C/C++</strong></b> and essential concepts such as <strong>pointers and trees</strong>. <br/>
-                        In order to automate assignment marking, I designed test cases and developed <b><strong>Bash/Python</strong></b> scripts that would compile student's source code, run it against the test case and check for valid solutions by performing a diff check between the canonical solution and the student submission.
+                        I Conducted office hours and review sessions to teach students (who happened to be my age) the core computer science topics of <strong>Data Structures and Object-Oriented Programming</strong> in <b><strong>C++</strong></b> and essential concepts such as <strong>pointers and trees</strong>. <br/>
+                        In order to automate assignment marking, I designed test cases and developed <b><strong>Python</strong></b> scripts that would compile student's source code, run it against the test case and check for valid solutions by performing a diff check between the canonical solution and the student submission.
                         <br/> <br/>
-                        Besides that, I maintained the course website, improved its layout and styling by introducing Bootstrap, and created Excel/CSV scripts to automatically update students' marks there.
+                        Besides that, I maintained the course website, improved its layout and styling by introducing Bootstrap, and created Excel/CSV scripts to automatically update students' marks.
                     </ExperienceCard>
                 </div>
             </div>
