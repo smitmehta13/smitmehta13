@@ -15,9 +15,9 @@ const Random = {
 		return luck > 0.5;
 	},
 	getColor: function helper4() {
-		var r = Math.random() * 255;
-		var g = Math.random() * 255;
-		var b = Math.random() * 255;
+		var r = (0.5 + Math.random() / 2) * 255;
+		var g = (0.5 + Math.random() / 2) * 255;
+		var b = (0.5 + Math.random() / 2) * 255;
 
 		var randomColor = "rgb(" + r + ", " + g + ", " + b + ")";
 

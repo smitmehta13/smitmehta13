@@ -17,11 +17,14 @@ class Canvas {
         this.ctx.clearRect(0, 0, Canvas.dimensions().width, Canvas.dimensions().height);
 
         // Draw player (p4)
-        this.ctx.drawImage(game.p4.sprite, game.p4.x, game.p4.y);
+        this.ctx.fillStyle = game.p4.color;
+        this.ctx.fillRect(game.p4.x, game.p4.y, game.p4.width, game.p4.height);
+        // this.ctx.drawImage(game.p4.sprite, game.p4.x, game.p4.y);
 
         // Draw chest
         this.ctx.fillStyle = 'transparent'
-        this.ctx.drawImage(game.gold.sprite, game.gold.x, game.gold.y);
+        this.ctx.fillRect(game.gold.x, game.gold.y, game.gold.width, game.gold.height);
+        // this.ctx.drawImage(game.gold.sprite, game.gold.x, game.gold.y);
     }
 
 

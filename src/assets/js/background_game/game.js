@@ -1,4 +1,5 @@
 import { Gold, P4 } from "./entities.js";
+import { Random } from "./random.js";
 import { Canvas } from "./canvas.js";
 import { Bot } from "./bot.js"
 
@@ -14,7 +15,6 @@ class Game {
 
 
 	restart = () => {
-		this.p4.score = 0;
 		this.p4.x = this.p4.xinit;
 		this.p4.y = this.p4.yinit;
 		this.gold.x = this.gold.xinit;
@@ -27,8 +27,8 @@ class Game {
 		this.p4.updateCoordinates();
 		this.p4.checkBounds();
 		if (this.p4.checkCollision(this.gold)) {
+			this.p4.color = Random.getColor();
 			this.gold.randomSpawn();
-			this.p4.score += 10;
 		}
 
 		this.bot.instruction(this.p4, this.gold)

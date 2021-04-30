@@ -7,7 +7,7 @@ function Me() {
     return (
         <section className="me-section animated">
             <h1 data-aos="fade-down" className="section-title">About Me</h1>
-            <div className="pt30 pb30 sections-wrap">
+            <div className="pt30 sections-wrap">
                 <div className="me-wrap">
                     <section id="me-intro" data-aos="fade-down">
                         <MeIntro />

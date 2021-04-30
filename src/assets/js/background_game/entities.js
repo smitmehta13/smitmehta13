@@ -1,7 +1,6 @@
 import { Random } from "./random.js";
 import { Canvas } from "./canvas.js";
 import GOLD_IMG from "../../images/gold.png"
-import P4_IMG from "../../images/hero-face.png";
 
 class Entities {
     constructor(height, width, x, y, xspeed, yspeed) {
@@ -50,11 +49,9 @@ class P4 extends Entities {
         super(
             15, 25,
             325, (Canvas.dimensions().height / 2),
-            4, 4
+            3, 3
         )
-        this.score = 0;
-        this.sprite = new Image();
-        this.sprite.src = P4_IMG;
+        this.color = Random.getColor();
         this.xinit = 10;
         this.yinit = Canvas.dimensions().height / 2;
         this.isMovingLeft = false;
@@ -123,8 +120,6 @@ class Gold extends Entities {
         )
         this.xinit = Canvas.dimensions().width - 46;
         this.yinit = (Canvas.dimensions().height / 2) - 15 / 4;
-        this.sprite = new Image();
-        this.sprite.src = GOLD_IMG;
     }
 }
 

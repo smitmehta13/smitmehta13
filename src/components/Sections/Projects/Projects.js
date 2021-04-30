@@ -328,22 +328,20 @@ function Projects(props) {
             },
             tech: [
                 { src: PYTHON, title: 'Python' },
-                { src: PYGAME, title: 'Pygame' },
+                { src: PYGAME, title: 'PyGame' },
             ]
         },
         {
             icon: LUCASNOGUEIRA_ICON,
-            title: 'lucasnogueira',
+            title: 'lnogueir',
             subtitle: 'Personal Website',
             main_image: LUCASNOGUEIRA,
             description: `
-            <b>lucasnogueira</b> is my personal website and portifolio, where I am aim to share my accomplishments and life story as through section. <br/> <br/>
-            The website is pretty self explanatory on its purpose but I wanted to give it some space in this section because of the recursive nature of talking about something inside the such thing. <br/> 
-            <b style="font-size: 19px;padding-top:7.5px;">Try finding the easter egg!</b>
+            My personal website and portfolio where I can share a bit of myself with the world wide web. <br/>
             `,
             short_description: "My personal website and home on the internet",
             links: {
-                github: 'https://github.com/lnogueir/lucasnogueira',
+                github: 'https://github.com/lnogueir/lnogueir',
                 website: 'https://lnogueir.me'
             },
             tech: [

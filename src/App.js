@@ -5,7 +5,6 @@ import Home from './components/Sections/Home/Home';
 import Experience from './components/Sections/Experience/Experience';
 import Projects from './components/Sections/Projects/Projects';
 import Me from './components/Sections/Me/Me';
-import Footer from './components/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -26,7 +25,6 @@ function App() {
     <div className="App">
       <Navbar currentTab={currentTab} gotoTab={gotoTab} />
       {SECTIONS_MAP[currentTab]}
-      <Footer />
     </div>
   );
 }
