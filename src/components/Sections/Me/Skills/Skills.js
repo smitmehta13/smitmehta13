@@ -3,9 +3,9 @@ import TechBar from './TechBar'
 import PYTHON from '../../../../assets/images/python.svg'
 import JAVASCRIPT from '../../../../assets/images/javascript.svg'
 import CPLUS from '../../../../assets/images/c++.svg'
+import C from '../../../../assets/images/C.svg'
 import HTML from '../../../../assets/images/html.svg'
 import CSS from '../../../../assets/images/css.svg'
-import JAVA from '../../../../assets/images/java.svg'
 import GO from '../../../../assets/images/go-logo.png'
 import AWS from '../../../../assets/images/aws-logo.svg'
 import REACT from '../../../../assets/images/react.svg'
@@ -59,23 +59,23 @@ function Skills() {
     }, [])
 
     const LANGUAGES = [
-        { src: JAVASCRIPT, title: 'JavaScript', level: 95, color: '#757575' },
-        { src: JAVA, title: 'Java', level: 73, color: '#ffb74d' },
+        { src: JAVASCRIPT, title: 'JavaScript', level: 89, color: '#757575' },
         { src: CSS, title: 'CSS', level: 86, color: '#039be5' },
-        { src: HTML, title: 'HTML', level: 89, color: '#ef5350' },
-        { src: GO, title: 'Golang', level: 93, color: '#5DC9E2', logoClass: 'skill-golang-responsive' },
-        { src: PYTHON, title: 'Python', level: 91, color: '#ffeb3b' },
-        { src: CPLUS, title: 'C++', level: 82, color: '#5c6bc0' },
+        { src: HTML, title: 'HTML', level: 88, color: '#ef5350' },
+        { src: C, title: 'C', level: 84, color: '#bdbdbd' },
+        { src: GO, title: 'Golang', level: 86, color: '#5DC9E2', logoClass: 'skill-golang-responsive' },
+        { src: PYTHON, title: 'Python', level: 94, color: '#ffeb3b' },
+        { src: CPLUS, title: 'C++', level: 92, color: '#5c6bc0' },
     ]
 
     const TOOLS = [
-        { src: REACT, title: 'React', level: 90, color: '#263238' },
-        { src: WEBRTC, title: 'WebRTC', level: 91, color: '#ffffff' },
-        { src: DOCKER, title: 'Docker', level: 81, color: '#0db7ed' },
-        { src: NODE, title: 'Node', level: 87, color: '#4caf50' },
-        { src: AWS, title: 'AWS', level: 82, color: '#FF9900' },
+        { src: REACT, title: 'React', level: 86, color: '#263238' },
+        { src: WEBRTC, title: 'WebRTC', level: 94, color: '#ffffff' },
+        { src: DOCKER, title: 'Docker', level: 90, color: '#0db7ed' },
+        { src: NODE, title: 'Node', level: 84, color: '#4caf50' },
+        { src: AWS, title: 'AWS', level: 80, color: '#FF9900' },
         { src: REDIS, title: 'Redis', level: 79, color: '#D82C20' },
-        { src: MONGODB, title: 'MongoDB', level: 85, color: '#66bb6a' },
+        { src: MONGODB, title: 'MongoDB', level: 82, color: '#66bb6a' },
     ]
 
     return (
