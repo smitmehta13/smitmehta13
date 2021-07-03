@@ -36,7 +36,7 @@
 
 \name{L\lowercase{ucas} N\lowercase{ogueira}\vspace{-.25cm}} % Your name
 
-\address{Software Engineer, University Of Waterloo}
+\address{3rd year student at the University of Waterloo}
 \address{\href{\github}{\includesvg[width=14pt]{../images/githubLogo.svg}} \hspace{2px} \href{\linkedin}{\includesvg[width=14pt]{../images/linkedin.svg}} \hspace{2px} \href{\stackoverflow}{\includesvg[width=13pt]{../images/stack_overflow.svg}} \hspace{0.05px} Links \hspace{0.15px} | \hspace{0.15px} \href{\website}{lnogueir.me} \hspace{0.15px} | \hspace{0.15px} \href{mailto: lnogueir@uwaterloo.ca}{lnogueir@uwaterloo.ca} \hspace{0.15px} | \hspace{0.15px} +1 226 978-5884} \\  % Your phone number and email
 
 \makeatletter
@@ -59,7 +59,7 @@
 
 \end{rSubsection}
 \vspace{-.2cm}
-\begin{rSubsection}{\textbf{Tech} | \normalfont{WebRTC, Git, Docker, Node.js, React, MongoDB, AWS, Redis, Flask, FFmpeg, Jenkins, MySQL}{}}{}{}
+\begin{rSubsection}{\textbf{Tech} | \normalfont{WebRTC, Git, Docker, Node.js, React, MongoDB, AWS, Redis, Flask, nginx, Jenkins, MySQL}{}}{}{}
 
 \end{rSubsection}
 
@@ -69,30 +69,28 @@
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Education}
-
-{\textbf{University of Waterloo} {| Bachelor of Computer Engineering (B.CE)}} \hfill {\textcolor{gray}{September 2018 - Present}} 
-\\ {Relevant courses: Operating Systems, Data Structures \& Algorithms, Systems Programming \& Concurrency}
-\vspace{5px}
-\\{\textbf{Federal University of Rio de Janeiro (UFRJ)}{ | B.Eng Electrical}} \hfill {\textcolor{gray}{February 2018 - August 2018}} 
-\\ {Placed 6th of all admitted students in the program; Dean's Honor List}\hfill
+\vspace{-.1cm}
+{\textbf{University of Waterloo | Bachelor of Computer Engineering}} \hfill {\textcolor{gray}{Sep 2018 - Apr 2023}} 
+\\ {Specialization: Communication Systems and Signal Processing\\Relevant course load: Operating Systems, Data Structures \& Algorithms, Computer Networks}
 \vspace{.1cm}
 \end{rSection}
 
 \vspace{-.20cm}
-
 \begin{rSection}{Experience}
-\begin{rSubsection}{\textbf{Software Engineering Intern} | \href{https://www.rossvideo.com/}{Ross Video}, \href{https://www.rossvideo.com/products-services/infrastructure/softgear-software-based-signal-processing-platform/}{\underline{softGear}}}{\textcolor{gray}{Remote | January 2021 - Present}}{}
+\vspace{-.1cm}
+\begin{rSubsection}{\textbf{Software Engineering Intern} | \href{https://www.rossvideo.com/}{Ross Video} }{\textcolor{gray}{Remote | Jan 2021 - Present}}{}
 
     \begin{bulletpoints}
         \vspace{-.10cm}
-        \item Implemented \textbf{WebRTC} client with \textbf{C++ chromium-based} native code API to publish and process multimedia streams from Serial Digital Interface to Selective Forwarding Unit, achieving \textbf{ultra-low latency of \textasciitilde0.6s}.
+        \item Working on the \href{https://www.rossvideo.com/products-services/infrastructure/softgear-software-based-signal-processing-platform/}{\underline{softGear}} Streaming Gateway to enable WebRTC streams in TV broadcast infrastructures.
+        \vspace{-.13cm}
+        \item Implemented native WebRTC client using \textbf{C++ chromium-based} API to stream multimedia content from Serial Digital Interface to media servers, achieving \textbf{ultra-low latency of \textasciitilde0.6s}.
         \vspace{-.13cm}
         \item Engineered \textbf{multi-threaded} media pipelines with \textbf{hardware acceleration} using \textbf{C} libraries to interact with a \textbf{GPU} and perform H264 video encoding/decoding efficiently, dropping CPU usage by \textbf{over 35\%}.
         \vspace{-.10cm}
     \end{bulletpoints}
-    \vspace{-.25cm}
 \end{rSubsection}
-\begin{rSubsection}{\textbf{Software Developer in Test} | \href{https://www.theweathernetwork.com/}{The Weather Network}}{\textcolor{gray}{Remote | May 2020 - August 2020}}{}
+\begin{rSubsection}{\textbf{Software Developer in Test, Coop} | \href{https://www.theweathernetwork.com/}{The Weather Network}}{\textcolor{gray}{Remote | May 2020 - Aug 2020}}{}
         \par
         \begin{bulletpoints}
             \vspace{-.10cm}
@@ -100,26 +98,28 @@
              \vspace{-.13cm}
             \item Performed \textbf{geospatial queries on MongoDB} to process coordinate messages from \textbf{AWS SQS} on \textbf{8GB} data sets of granular precision weather data leading to nearly \textbf{30\% performance upgrade}.
             \vspace{-.13cm}
-             \item Used \textbf{Jenkins, Helm, and Kubernetes} to standardize the \textbf{CI/CD} approach for \textbf{all backend teams} by engineering a configurable centralized \textbf{deployment pipeline} improving infrastructure maintainability.
-             \vspace{-.25cm}
+             \item Used \textbf{Jenkins, Helm, and Kubernetes} to standardize \textbf{CI/CD deployment pipelines} across multiple engineering teams, improving infrastructure maintainability.
+             \vspace{-.10cm}
         \end{bulletpoints}
 \end{rSubsection}
-\begin{rSubsection}{\textbf{Junior Web Developer} | \href{https://www.agf.com/ca/en/index.jsp}{AGF Investments}}{\textcolor{gray}{Toronto, ON | September 2019 - December 2019}}{}
+\begin{rSubsection}{\textbf{Junior Web Developer} | \href{https://www.agf.com/ca/en/index.jsp}{AGF Investments}}{\textcolor{gray}{Toronto, ON | Sep 2019 - Dec 2019}}{}
         \par
         \begin{bulletpoints}
             \vspace{-.10cm}
-            \item Shipped multiple \textbf{JSP} pages and \textbf{Java backend} server endpoints interacting with \textbf{SQL databases} to handle users/staff messaging requests and secure file uploads that \textbf{impacted over 60 000 users}.
+            \item Shipped several \textbf{JSP} pages and \textbf{Java backend} server endpoints interacting with \textbf{SQL databases} to handle users/staff messaging requests and secure file uploads that \textbf{impacted over 60 000 users}.
             \vspace{-.13cm}
-             \item Implemented \textbf{React} into \textbf{Java Spring} to migrate off legacy JSPs and jQuery Plugins which \textbf{reduced bundle size by approximately 15\%}.
-             \vspace{-.25cm}
+            \item Implemented \textbf{React} into \textbf{Java Spring} to migrate off legacy JSPs and jQuery Plugins which \textbf{reduced bundle size by approximately 15\%}.
+             \vspace{-.10cm}
         \end{bulletpoints}
 \end{rSubsection}
-\begin{rSubsection}{\textbf{Teaching Assistant} | \href{https://student.cs.uwaterloo.ca/~cs138/outline.shtml}{University Of Waterloo, CS138}}{\textcolor{gray}{Waterloo, ON | January 2019 - April 2019}}{}
+\begin{rSubsection}{\textbf{Teaching Assistant} | University Of Waterloo}{\textcolor{gray}{Waterloo, ON | Jan 2019 - Apr 2019}}{}
 
     \begin{bulletpoints}
         \vspace{-.10cm}
-        \item Taught \textbf{Data Structures and Object Oriented Programming} in \textbf{C++} for first-year Software Engineering students and developed \textbf{Python} scripts for auto-marking assignments.
-        \vspace{-.25cm}
+        \item Taught and coordinated \href{https://student.cs.uwaterloo.ca/~cs138/outline.shtml}{ \underline{CS138}}, a first-year Software Engineering course about \textbf{Data Structures} and \textbf{Object Oriented Programming} in \textbf{C++}.
+        \vspace{-.13cm}
+        \item Developed \textbf{Python} scripts to automate tasks such as assignments marking and course website updates.
+        \vspace{-.10cm}
     \end{bulletpoints}   
 
 \end{rSubsection}
@@ -133,8 +133,8 @@
 
 
 \begin{rSection}{Projects}
-
-\begin{rSubsection}{\textbf{Liteboard.io} | Founder | \href{https://falauniversidades.com.br/projeto-gratuito-simplifica-o-acesso-as-aulas-on-line/}{\underline{Featured}} | +300 stars on \href{https://github.com/jeverd/lecture-experience}{\underline{Github} \faGithub}}{\textcolor{gray}{April 2020 - October 2020}}{}
+\vspace{-.1cm}
+\begin{rSubsection}{\textbf{Liteboard.io} | Founder | \href{https://falauniversidades.com.br/projeto-gratuito-simplifica-o-acesso-as-aulas-on-line/}{\underline{Featured}} | +300 stars on \href{https://github.com/jeverd/lecture-experience}{\underline{Github} \faGithub}}{\textcolor{gray}{Apr 2020 - Oct 2020}}{}
         \par
         \begin{bulletpoints}
             \vspace{-.10cm}
