@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Fab from '@material-ui/core/Fab'
+import Button from '@material-ui/core/Button'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import ExpandLessIcon from '@material-ui/icons/ExpandLess'
 
@@ -12,9 +12,9 @@ function ExpandButton(props){
   }
 
   return (
-    <Fab
+    <Button
       onClick={handleToggleContent}
-      variant="extended"
+      variant="contained"
     >
         {
           isExpanded ?
@@ -28,7 +28,7 @@ function ExpandButton(props){
                 <ExpandMoreIcon />
             </React.Fragment>
         }
-    </Fab>
+    </Button>
   )
 }
 
