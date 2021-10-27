@@ -101,7 +101,7 @@ function Experience(props) {
                         title="Software Engineering Intern"
                         location="Ottawa, Canada"
                         start_date="January, 2021"
-                        end_date="Present"
+                        end_date="August, 2021"
                         tech={ROSS_TECH}
                     >
                         Ross powers video productions for <strong>billions</strong> of global viewers daily with the industry’s widest range of smart production solutions and their customers include top broadcast networks like ABC, Fox, and teams like the LA Lakers.
