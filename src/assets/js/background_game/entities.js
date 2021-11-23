@@ -1,6 +1,5 @@
 import { Random } from "./random.js";
 import { Canvas } from "./canvas.js";
-import GOLD_IMG from "../../images/gold.png"
 
 class Entities {
     constructor(height, width, x, y, xspeed, yspeed) {
