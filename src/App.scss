@@ -1740,3 +1740,12 @@ div.me-intro-wrap, div.me-origins-wrap{
 .experience-read-more-button button{
   text-transform: lowercase;
 }
+
+span[aria-label="emoji"] {
+  font-family: "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  // font-size: 1em;
+  // font-style: normal !important;
+  font-weight: 400;
+  // line-height: 1;
+  // vertical-align: -0.075em;
+}
