@@ -4,7 +4,6 @@ import MeSectionBreadcrumbs from './MeSectionBreadcrumbs'
 import YOUNG_ME_GUITAR from '../../../assets/images/young_me_guitar.png'
 import HACKATHON from '../../../assets/images/hackathon_exp.jpeg'
 import ME_FIT from '../../../assets/images/me_fit.png'
-import ME_PLAYING from '../../../assets/videos/me_playing.mp4'
 import Skills from './Skills/Skills'
 
 function MeHobbies(props) {    
@@ -33,25 +32,22 @@ function MeHobbies(props) {
                 </MeImage>
                 <div className="me-body">
                     <p>
-                        Playing the guitar is one of my absolute favorite things to do. I started playing it when I was 9, and, at this point, it is part of who I am.
+                        Another hobby of mine is playing the guitar. I started playing it when I was 9 and till this day I absolutely love it!
                         <br/>
-                        I loved to play with other people and through music, I formed great friendships and most importantly developed important skills such as:
+                        Through music, I formed great friendships and most importantly developed important skills such as:
                     </p>
                     <ul style={{margin: '0 3px'}}>
-                        <li>Getting out of my comfort zone: playing in front of other people is TOUGH</li>
-                        <li>Teamwork to rehearsal and perform a song in group</li>
-                        <li>Learning under pressure when you need to master songs within tight deadlines</li>
+                        <li>Getting out of my comfort zone: presenting in front of other people is TOUGH!</li>
+                        <li>Teamwork: rehearsing and performing songs in a band is very challenging.</li>
                     </ul>
                     <p style={{margin: 0}}>
-                        Checkout my <a rel="noopener noreferrer" target="_blank" className="link" href="https://www.youtube.com/user/SuperLucasGuns/videos">Youtube</a> channel for some low-quality guitar covers 😂.
+                        <br/>
+                        Recently, I have been playing a lot of Guitar Hero! Checkout my <a rel="noopener noreferrer" target="_blank" className="link" href="https://www.youtube.com/user/SuperLucasGuns/videos">Youtube</a> channel for some low-quality guitar covers and guitar hero runs.
                     </p>
                 </div>
             </div>
             <div className="guitar-video">
-                <video controls>
-                    <source src={ME_PLAYING} type="video/mp4" />
-                    Your browser does not support videos.
-                </video>
+                <iframe src="https://www.youtube.com/embed/e5F3aAno0Us"></iframe>
             </div>
             <div className="me-origins-wrap">
                 <div className="me-body">
@@ -59,7 +55,7 @@ function MeHobbies(props) {
                         <br /><br/>
                         Another hobby that I love is running. I used to be part of the track team during High School and it's certainly my favorite sport to practice.
                         <br/> <br/>
-                        I do not run competitively anymore, but I sure miss the feeling of being on a race! Now I run only 3-4 times a week as way to de-stress and as an excuse to listen to music for long periods of time 😂. 
+                        I do not run competitively anymore, but I sure miss the feeling of being on a race! Now I run only 3-4 times a week as way to de-stress and as an excuse to listen to music for long periods of time. 
                         <br/><br/>
                         Running has kept me in shape and has contributed to my well-being mentally and physically in many ways.
                     </p>
