@@ -7,4 +7,4 @@
 
 <p><i>Recent <a href="https://leetcode.com/lnogueir/">leetcode</a> activity:</i></p>
 
-![Leetcode Stats](https://leetcode.card.workers.dev/?username=lnogueir&style=auto&extension=activity&show_rank=false)
+![Leetcode Stats](https://leetcode.card.workers.dev/?username=lnogueir&style=auto&extension=activity&show_rank=0)
