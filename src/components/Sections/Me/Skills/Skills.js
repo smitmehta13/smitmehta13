@@ -43,10 +43,6 @@ function Skills() {
             graphs_wrap.each(handleGraphClick)
         }
 
-
-        //initialize language graph without scroll trigger
-        $($('.graphs-wrap')[0]).children().each(handleGraphClick)
-
         //load graphs onscroll
         document.addEventListener('aos:in', handleScrollInGraph)
         document.addEventListener('aos:out', handleScrollOutGraph)
