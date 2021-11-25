@@ -14,7 +14,7 @@ function MeIntro() {
                 This is me <span role="img" aria-label="emoji">😎</span>
             </MeImage>
             <div className="me-body">
-                <h1>Intro <span role="img" aria-label="emoji">✨</span></h1>
+                <h1>Intro <span role="img" aria-label="emoji">🌱</span></h1>
                 <MeSectionBreadcrumbs sectionIndex={0} />
                 <p>
                     <br />
