@@ -15,7 +15,7 @@ function MeHobbies(props) {
                 </MeImage>
                 <div className="me-body">
                     <h1>Hobbies <span role="img" aria-label="emoji">🎯</span></h1>
-                    <MeSectionBreadcrumbs sectionIndex={1} />
+                    <MeSectionBreadcrumbs sectionIndex={2} />
                     <p>
                         <br/>
                         I've always tried to make sure my hobbies were something more than just fun to me. For me, hobbies for me should also be something productive to you in some way. 

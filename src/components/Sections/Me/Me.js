@@ -2,6 +2,7 @@ import React from 'react'
 import MeIntro from './MeIntro'
 import MeVolunteer from './MeVolunteer'
 import MeHobbies from './MeHobbies'
+import MeOrigins from './MeOrigins'
 
 function Me() {
     return (
@@ -12,12 +13,15 @@ function Me() {
                     <section id="me-intro" data-aos="fade-down">
                         <MeIntro />
                     </section>
+                    <section id="me-origins" data-aos="fade-left">
+                        <MeOrigins />
+                    </section>
                     <section id="me-hobbies" data-aos="fade-right">
                         <MeHobbies />
                     </section>
-                    <section id="me-volunteer" data-aos="fade-right">
+                    {/* <section id="me-volunteer" data-aos="fade-right">
                         <MeVolunteer />
-                    </section>
+                    </section> */}
                 </div>
             </div>
         </section>
