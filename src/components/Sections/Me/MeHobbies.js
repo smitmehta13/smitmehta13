@@ -15,11 +15,11 @@ function MeHobbies(props) {
                 </MeImage>
                 <div className="me-body">
                     <h1>Hobbies <span role="img" aria-label="emoji">🎯</span></h1>
-                    <MeSectionBreadcrumbs sectionIndex={2} />
+                    <MeSectionBreadcrumbs sectionIndex={1} />
                     <p>
                         <br/>
                         I've always tried to make sure my hobbies were something more than just fun to me. For me, hobbies for me should also be something productive to you in some way. 
-                        I found that attending hackathons are exactly that! Attending hackathons have been my #1 hobbie in the last few years. I have made many friends this way and experimented many technologies such as React Native, Google Vision and Speech-to-Text which improved my resume especially when I was in first year.
+                        I found that attending hackathons are exactly that! Attending hackathons have been my #1 hobbie in the last few years. I have made many friends this way and experimented many technologies such as React Native, Google Vision and Speech-to-Text which improved my resume especially when I was in first year of school.
                     </p>
                 </div>
             </div>
@@ -32,7 +32,7 @@ function MeHobbies(props) {
                 </MeImage>
                 <div className="me-body">
                     <p>
-                        Another hobby of mine is playing the guitar. I started it when I was 9 and till this day I absolutely love it!
+                        Another hobby of mine is playing the guitar. I started playing it when I was 9 and till this day I absolutely love it!
                         <br/>
                         Through music, I formed great friendships and most importantly developed important skills such as:
                     </p>
