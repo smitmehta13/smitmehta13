@@ -1,5 +1,4 @@
 import React from 'react'
-import { FaFileAlt, FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 import RESUME from '../../../assets/resume/lucas_nogueira_resume.pdf'
 import STACKOVERFLOW_ICON from '../../../assets/images/stack_overflow.svg'
 import LINKEDIN_ICON from '../../../assets/images/linkedinIcon.svg'
@@ -39,15 +38,15 @@ class Home extends React.Component {
                             </span>
                             <div className="home-links justify-around appear-button">
                                 <a className="home-link" rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/lnogueir/">
-                                    <img style={{top: 1}} width="26" src={LINKEDIN_ICON}/> Linkedin
+                                    <img alt="Linkedin Icon" style={{top: 1}} width="26" src={LINKEDIN_ICON}/> Linkedin
                                 </a>
                                 <span><i>•</i></span>
                                 <a className="home-link" rel="noopener noreferrer" target="_blank" href="https://github.com/lnogueir">
-                                    <img style={{top: 3}} width="26" src={GITHUB_ICON}/> Github
+                                    <img alt="Github Icon" style={{top: 3}} width="26" src={GITHUB_ICON}/> Github
                                 </a>
                                 <span><i>•</i></span>
                                 <a className="home-link" rel="noopener noreferrer" target="_blank" href="https://stackoverflow.com/users/11348579/lnogueir">
-                                    <img style={{top: 3}} width="26" src={STACKOVERFLOW_ICON}/>Stack Overflow
+                                    <img alt="Stack Overflow Icon" style={{top: 3}} width="26" src={STACKOVERFLOW_ICON}/>Stack Overflow
                                 </a>
                             </div>
                         </div>
@@ -56,8 +55,8 @@ class Home extends React.Component {
                                 Let's work together?
                             </h3>
                             <div className="home-hire-me-links">
-                                <a rel="noopener noreferrer" target="_blank" href={RESUME} className="home-link">📄 Resume</a>
-                                <a rel="noopener noreferrer" target="_blank" href="mailto: lnogueir@uwaterloo.ca" className="home-link">📫 Email</a>
+                                <a rel="noopener noreferrer" target="_blank" href={RESUME} className="home-link"><span role="img" aria-label="Resume Icon">📄</span> Resume</a>
+                                <a rel="noopener noreferrer" target="_blank" href="mailto: lnogueir@uwaterloo.ca" className="home-link"><span role="img" aria-label="Email Icon">📫</span> Email</a>
                             </div>
                         </div>
                     </div>

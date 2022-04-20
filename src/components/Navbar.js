@@ -1,8 +1,4 @@
 import React from 'react';
-import { TiHomeOutline } from 'react-icons/ti';
-import { MdAccessibility } from 'react-icons/md'
-import { IoIosRocket } from 'react-icons/io'
-import { FaBlackTie } from 'react-icons/fa';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import Fab from '@material-ui/core/Fab'
 import $ from 'jquery';
@@ -103,33 +99,33 @@ class Navbar extends React.Component {
                 <div id="navicons-wrap" className="justify-center animated">
                     <a href="#home" title="Home" onClick={this.gotoTab}>
                         <div style={{ animationDelay: '1.5s' }} className="icon-wrapper appear">
-                            <text className="navbar-icon">
+                            <span role="img" aria-label="Home Icon" className="navbar-icon">
                                 🏠
-                            </text>
+                            </span>
                             <b className="navicon-name">Home</b>
                         </div>
                     </a>
                     <a href="#projects" onClick={this.gotoTab} title="Projects">
                         <div style={{ animationDelay: '1.75s' }} className="icon-wrapper appear">
-                            <text className="navbar-icon">
+                            <span role="img" aria-label="Projects Icon" className="navbar-icon">
                                 💻
-                            </text>
+                            </span>
                             <b className="navicon-name">Projects</b>
                         </div>
                     </a>
                     <a href="#experience" onClick={this.gotoTab} title="Work Experience">
                         <div style={{ animationDelay: '2s' }} className="icon-wrapper appear">
-                            <text className="navbar-icon">
+                            <span role="img" aria-label="Work Icon" className="navbar-icon">
                                 💼
-                            </text>
+                            </span>
                             <b className="navicon-name">Work</b>
                         </div>
                     </a>
                     <a href="#me" onClick={this.gotoTab} title="Me">
                         <div style={{ animationDelay: '2.25s' }} className="icon-wrapper appear">
-                            <text className="navbar-icon">
+                            <span role="img" aria-label="Me Icon" className="navbar-icon">
                                 😀
-                            </text>
+                            </span>
                             <b className="navicon-name">Me</b>
                         </div>
                     </a>

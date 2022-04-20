@@ -47,7 +47,7 @@ function MeHobbies(props) {
                 </div>
             </div>
             <div className="guitar-video">
-                <iframe src="https://www.youtube.com/embed/e5F3aAno0Us"></iframe>
+                <iframe title="Clone Hero Video" src="https://www.youtube.com/embed/e5F3aAno0Us"></iframe>
             </div>
             <div className="me-origins-wrap">
                 <div className="me-body">
