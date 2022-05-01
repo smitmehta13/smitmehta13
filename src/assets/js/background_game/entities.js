@@ -48,7 +48,7 @@ class P4 extends Entities {
         super(
             15, 25,
             325, (Canvas.dimensions().height / 2),
-            3, 3
+            1.25, 1.25
         )
         this.color = Random.getColor();
         this.xinit = 10;
@@ -57,24 +57,13 @@ class P4 extends Entities {
         this.isMovingRight = false;
         this.isMovingUp = false;
         this.isMovingDown = false;
-
-
     }
 
     move = (instruction) => {
-        if (instruction === "up") {
-            this.isMovingUp = true
-        }
-        if (instruction === "down") {
-            this.isMovingDown = true
-        }
-        if (instruction === "left") {
-            this.isMovingLeft = true
-
-        }
-        if (instruction === "right") {
-            this.isMovingRight = true
-        }
+        this.isMovingUp = instruction === "up";
+        this.isMovingDown = instruction === "down";
+        this.isMovingLeft = instruction === "left";
+        this.isMovingRight = instruction === "right";
     }
 
     updateCoordinates() {
@@ -119,6 +108,7 @@ class Gold extends Entities {
         )
         this.xinit = Canvas.dimensions().width - 46;
         this.yinit = (Canvas.dimensions().height / 2) - 15 / 4;
+        this.color = 'transparent';
     }
 }
 

@@ -22,7 +22,7 @@ class Canvas {
         // this.ctx.drawImage(game.p4.sprite, game.p4.x, game.p4.y);
 
         // Draw chest
-        this.ctx.fillStyle = 'transparent'
+        this.ctx.fillStyle = game.gold.color;
         this.ctx.fillRect(game.gold.x, game.gold.y, game.gold.width, game.gold.height);
         // this.ctx.drawImage(game.gold.sprite, game.gold.x, game.gold.y);
     }
