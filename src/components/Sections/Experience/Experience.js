@@ -44,7 +44,7 @@ function Experience(props) {
     const COURSERA_URLS = {
         linkedin: 'https://www.linkedin.com/company/coursera/',
         twitter: "https://twitter.com/coursera",
-        apple: 'https://apps.apple.com/br/app/coursera-learn-new-skills/id736535961',
+        apple: 'https://apps.apple.com/ca/app/coursera-learn-new-skills/id736535961',
         youtube: 'https://www.youtube.com/user/coursera',
         instagram: 'https://www.instagram.com/coursera/',
     }
