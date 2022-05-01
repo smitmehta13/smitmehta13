@@ -44,7 +44,7 @@ function Experience(props) {
     const COURSERA_URLS = {
         linkedin: 'https://www.linkedin.com/company/coursera/',
         twitter: "https://twitter.com/coursera",
-        apple: 'https://apps.apple.com/us/app/coursera-learn-new-skills/id736535961',
+        apple: 'https://apps.apple.com/br/app/coursera-learn-new-skills/id736535961',
         youtube: 'https://www.youtube.com/user/coursera',
         instagram: 'https://www.instagram.com/coursera/',
     }
@@ -124,17 +124,15 @@ function Experience(props) {
                         end_date="April, 2022"
                         tech={COURSERA_TECH}
                     >
-                        Ross powers video productions for <strong>billions</strong> of global viewers daily with the industry’s widest range of smart production solutions and their customers include top broadcast networks like ABC, Fox, and teams like the LA Lakers.
+                        Coursera partners with <strong>more than 200 leading universities</strong> and companies to bring flexible, affordable, job-relevant online learning to individuals and organizations worldwide. Offering learning opportunities—from hands-on projects and courses to job-ready certificates and degree programs.
                         <br/><br/>
-                        As a Software Engineering Intern with the <a rel="noopener noreferrer" target="_blank" className="link" href="https://www.rossvideo.com/products-services/infrastructure/softgear-software-based-signal-processing-platform/">softGear</a> team, my main task was to develop an efficient and stable <strong>WebRTC</strong> client.
-                        In a nutshell, the project generates WebRTC streams from an <a rel="noopener noreferrer" target="_blank" className="link" href="https://en.wikipedia.org/wiki/Serial_digital_interface">SDI</a> signal and publishes it to an <a rel="noopener noreferrer" target="_blank" className="link" href="https://webrtcglossary.com/sfu/">SFU</a>, which would route the stream to users on a web browser.
+                        As a Software Engineering Intern in the Content Ingestion team, I worked on creating and improving workflows for importing out-of-platform content into Coursera as well as maintaining APIs to enable institutions to import their content programmatically.
                         <br/><br/>
-                        Using the <strong>libwebrtc</strong> implementation (the same used by many browsers including Chrome), I implemented <strong>multi-threaded</strong> media pipelines to read raw video and audio frames from shared memory, encode and packetize them as an <a rel="noopener noreferrer" target="_blank" className="link" href="https://en.wikipedia.org/wiki/Real-time_Transport_Protocol">RTP</a> payload to transport over the network. 
+                        The main project I worked on was Canvas Ingestion: allow instructors to import their existing courses in <a rel="noopener noreferrer" target="_blank" className="link" href="https://www.instructure.com/canvas">Canvas</a> platform into Coursera. This project was important because most U.S. university partners use Canvas as their <a rel="noopener noreferrer" target="_blank" className="link" href="https://en.wikipedia.org/wiki/Learning_management_system">LMS</a>, so enabling instructors to simply download an export file and import it, rather than manually copying every item, meant more courses would be launched into the platform and hence more revenue.
                         <br/><br/>
-                        To improve performance, I developed a custom video codec interface to perform H264 video encoding/decoding on a GPU. To do that, I used <a rel="noopener noreferrer" target="_blank" className="link" href="https://libav.org/">libav</a>, the underlying <strong>C</strong> library of the famous FFmpeg media processing tool. After a successful implementation, the application CPU usage dropped over by 35% per stream.
+                        In technical terms, this project consisted in a couple of <a rel="noopener noreferrer" target="_blank" className="link" href="https://grpc.io/">gRPC</a> endpoints to trigger the import job, which would load the could export file to S3 after performing checks and validations. Once the file was on our S3 bucket, our program would parse the export file which followed the <a rel="noopener noreferrer" target="_blank" className="link" href="http://www.imsglobal.org/cc/index.html">IMSCC specification</a>. Once everything had been parsed, we had an data intermediary representation of all the items as data structures closely related to their IMSCC definitions. We would then convert these data structures into its equivalent Coursera representation and load it to our platform using our course authoring APIs.
                         <br/><br/>
-                        Also, I worked with WebSockets to initiate the WebRTC session and negotiate media metadata and <a rel="noopener noreferrer" target="_blank" className="link" href="https://en.wikipedia.org/wiki/Interactive_Connectivity_Establishment">ICE</a> candidates with the SFU.
-
+                        I worked mostly on the parsing and loading stage of the project developing many of the individual parsers that composed our overal IMSCC parser and also, converting the structures into Coursera's representation and using/maintaining our course authoring APIs to create and store the content into the platform.
                         <br/>
                     </ExperienceCard>
                 </div>
@@ -152,7 +150,7 @@ function Experience(props) {
                     >
                         Ross powers video productions for <strong>billions</strong> of global viewers daily with the industry’s widest range of smart production solutions and their customers include top broadcast networks like ABC, Fox, and teams like the LA Lakers.
                         <br/><br/>
-                        As a Software Engineering Intern with the <a rel="noopener noreferrer" target="_blank" className="link" href="https://www.rossvideo.com/products-services/infrastructure/softgear-software-based-signal-processing-platform/">softGear</a> team, my main task was to develop an efficient and stable <strong>WebRTC</strong> client.
+                        As a Software Developer Intern with the <a rel="noopener noreferrer" target="_blank" className="link" href="https://www.rossvideo.com/products-services/infrastructure/softgear-software-based-signal-processing-platform/">softGear</a> team, my main task was to develop an efficient and stable <strong>WebRTC</strong> client.
                         In a nutshell, the project generates WebRTC streams from an <a rel="noopener noreferrer" target="_blank" className="link" href="https://en.wikipedia.org/wiki/Serial_digital_interface">SDI</a> signal and publishes it to an <a rel="noopener noreferrer" target="_blank" className="link" href="https://webrtcglossary.com/sfu/">SFU</a>, which would route the stream to users on a web browser.
                         <br/><br/>
                         Using the <strong>libwebrtc</strong> implementation (the same used by many browsers including Chrome), I implemented <strong>multi-threaded</strong> media pipelines to read raw video and audio frames from shared memory, encode and packetize them as an <a rel="noopener noreferrer" target="_blank" className="link" href="https://en.wikipedia.org/wiki/Real-time_Transport_Protocol">RTP</a> payload to transport over the network. 
