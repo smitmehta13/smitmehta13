@@ -1,5 +1,6 @@
 import React from 'react'
 import ExperienceCard from './ExperienceCard'
+import COURSERA_LOGO from '../../../assets/images/coursera-logo.svg'
 import ROSS_LOGO from '../../../assets/images/RossLogo.png'
 import TWN_LOGO from '../../../assets/images/the-weather-network-logo.svg'
 import AGF_LOGO from '../../../assets/images/agf-logo.svg'
@@ -26,8 +27,27 @@ import KUBERNETES from '../../../assets/images/kubernetes.svg'
 import GO from '../../../assets/images/golang.svg'
 import GIT from '../../../assets/images/git.svg'
 import WEBRTC from '../../../assets/images/webrtc.svg'
+import DYNAMODB from '../../../assets/images/dynamodb.svg'
+import GRPC from '../../../assets/images/grpc-logo.svg'
+import SPRING_BOOT from '../../../assets/images/spring-boot-logo.png'
 
 function Experience(props) {
+    const COURSERA_TECH = [
+        { src: JAVA, title: 'Java'},
+        { src: SPRING_BOOT, title: 'Spring Boot'},
+        { src: DOCKER, title: 'Docker'},
+        { src: DYNAMODB, title: 'DynamoDB'},
+        { src: GIT, title: 'Git' },
+        { src: JENKINS, title: 'Jenkins'},
+        { src: GRPC, title: 'gRPC'}
+    ]
+    const COURSERA_URLS = {
+        linkedin: 'https://www.linkedin.com/company/coursera/',
+        twitter: "https://twitter.com/coursera",
+        apple: 'https://apps.apple.com/us/app/coursera-learn-new-skills/id736535961',
+        youtube: 'https://www.youtube.com/user/coursera',
+        instagram: 'https://www.instagram.com/coursera/',
+    }
     const ROSS_TECH = [
         { src: CPP, title: 'C++' },
         { src: WEBRTC, title: 'WebRTC'},
@@ -94,11 +114,37 @@ function Experience(props) {
             <div align="center" className="experiences-wrap sections-wrap">
                 <div>
                     <ExperienceCard
+                        logo_src={COURSERA_LOGO}
+                        company="Coursera"
+                        company_urls={COURSERA_URLS}
+                        prefered_url="https://www.coursera.org/"
+                        title="Software Engineering Intern"
+                        location="Toronto, Canada"
+                        start_date="January, 2022"
+                        end_date="April, 2022"
+                        tech={COURSERA_TECH}
+                    >
+                        Ross powers video productions for <strong>billions</strong> of global viewers daily with the industry’s widest range of smart production solutions and their customers include top broadcast networks like ABC, Fox, and teams like the LA Lakers.
+                        <br/><br/>
+                        As a Software Engineering Intern with the <a rel="noopener noreferrer" target="_blank" className="link" href="https://www.rossvideo.com/products-services/infrastructure/softgear-software-based-signal-processing-platform/">softGear</a> team, my main task was to develop an efficient and stable <strong>WebRTC</strong> client.
+                        In a nutshell, the project generates WebRTC streams from an <a rel="noopener noreferrer" target="_blank" className="link" href="https://en.wikipedia.org/wiki/Serial_digital_interface">SDI</a> signal and publishes it to an <a rel="noopener noreferrer" target="_blank" className="link" href="https://webrtcglossary.com/sfu/">SFU</a>, which would route the stream to users on a web browser.
+                        <br/><br/>
+                        Using the <strong>libwebrtc</strong> implementation (the same used by many browsers including Chrome), I implemented <strong>multi-threaded</strong> media pipelines to read raw video and audio frames from shared memory, encode and packetize them as an <a rel="noopener noreferrer" target="_blank" className="link" href="https://en.wikipedia.org/wiki/Real-time_Transport_Protocol">RTP</a> payload to transport over the network. 
+                        <br/><br/>
+                        To improve performance, I developed a custom video codec interface to perform H264 video encoding/decoding on a GPU. To do that, I used <a rel="noopener noreferrer" target="_blank" className="link" href="https://libav.org/">libav</a>, the underlying <strong>C</strong> library of the famous FFmpeg media processing tool. After a successful implementation, the application CPU usage dropped over by 35% per stream.
+                        <br/><br/>
+                        Also, I worked with WebSockets to initiate the WebRTC session and negotiate media metadata and <a rel="noopener noreferrer" target="_blank" className="link" href="https://en.wikipedia.org/wiki/Interactive_Connectivity_Establishment">ICE</a> candidates with the SFU.
+
+                        <br/>
+                    </ExperienceCard>
+                </div>
+                <div>
+                    <ExperienceCard
                         logo_src={ROSS_LOGO}
                         company="Ross"
                         company_urls={ROSS_URLS}
                         prefered_url="https://www.rossvideo.com/"
-                        title="Software Engineering Intern"
+                        title="Software Developer Intern"
                         location="Ottawa, Canada"
                         start_date="January, 2021"
                         end_date="August, 2021"
