@@ -35,12 +35,12 @@ Here are some of the projects I've worked on:
 
 - 🔨 Some of the technologies and tools I'm proficient in include:
   - ![Python](https://img.shields.io/badge/-Python-green?style=flat-square)
-  - ![JavaScript](https://img.shields.io/badge/-JavaScript-yellow?style=flat-square)
-  - ![C#](https://img.shields.io/badge/-C%23-blue?style=flat-square)
-  - ![HTML](https://img.shields.io/badge/-HTML-orange?style=flat-square)
-  - ![CSS](https://img.shields.io/badge/-CSS-blue?style=flat-square)
-  - ![Swift](https://img.shields.io/badge/-Swift-red?style=flat-square)
-  - ![Java](https://img.shields.io/badge/-Java-purple?style=flat-square)
+![JavaScript](https://img.shields.io/badge/-JavaScript-yellow?style=flat-square)
+![C#](https://img.shields.io/badge/-C%23-blue?style=flat-square)
+![HTML](https://img.shields.io/badge/-HTML-orange?style=flat-square)
+![CSS](https://img.shields.io/badge/-CSS-blue?style=flat-square)
+![Swift](https://img.shields.io/badge/-Swift-red?style=flat-square)
+![Java](https://img.shields.io/badge/-Java-purple?style=flat-square)
 
 
 ## GitHub History
