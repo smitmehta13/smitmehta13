@@ -15,12 +15,12 @@ Hello! I'm Smit Mehta, a passionate Developer based in Canada. Welcome to my Git
 ## About Me
 
 - 👨‍💻 I'm a Software Developer with a strong interest in Full Stack.
-- 🌐 You can find more about me on my ![Website](https://www.smitmehta13.com)
+- 🌐 You can find more about me on my [![Website](https://www.smitmehta13.com)]
 - 📫 You can reach me at Smitmehta.work@gmail.com.
 - 📚 I'm constantly learning and exploring new technologies.
 
 <!-- Add GitHub stats, top languages, and Wakatime card -->
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=smitmehta13&show_icons=true&count_private=true&theme=dark)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=smitmehta13&show_icons=true&count_private=true&theme=dark&hide)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=smitmehta13&layout=compact&theme=dark)
 ## My Projects
 
