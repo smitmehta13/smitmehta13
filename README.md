@@ -20,9 +20,8 @@ Hello! I'm Smit Mehta, a passionate Developer based in Canada. Welcome to my Git
 - 📚 I'm constantly learning and exploring new technologies.
 
 <!-- Add GitHub stats, top languages, and Wakatime card -->
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=smitmehta13&show_icons=true&count_private=true&theme=dark)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=smitmehta13&show_icons=false&count_private=true&theme=dark)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=smitmehta13&layout=compact&theme=dark)
-![Wakatime Card](https://github-readme-stats.vercel.app/api/wakatime?username=smitmehta13&theme=dark)
 ## My Projects
 
 Here are some of the projects I've worked on:
