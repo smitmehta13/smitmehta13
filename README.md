@@ -1,5 +1,5 @@
 <!-- Add an eye-catching header with a GIF -->
-![Header](https://your-gif-url.gif)
+![Header]([https://your-gif-url.gif](https://drive.google.com/file/d/1jNwwKme7Vf1ke-Oxd2u5pqw_8IhD4yCn/view))
 
 # Welcome to My GitHub Profile
 
@@ -20,7 +20,7 @@ Hello! I'm Smit Mehta, a passionate Developer based in Canada. Welcome to my Git
 - 📚 I'm constantly learning and exploring new technologies.
 
 <!-- Add GitHub stats, top languages, and Wakatime card -->
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=smitmehta13&show_icons=false&count_private=true&theme=dark)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=smitmehta13&show_icons=true&count_private=true&theme=dark)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=smitmehta13&layout=compact&theme=dark)
 ## My Projects
 
