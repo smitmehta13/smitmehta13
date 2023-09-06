@@ -1,5 +1,5 @@
 <!-- Add an eye-catching header with a GIF -->
-![Header]([https://your-gif-url.gifhttps://drive.google.com/file/d/1jNwwKme7Vf1ke-Oxd2u5pqw_8IhD4yCn/view])
+![Header](https://s11.gifyu.com/images/SgG7m.gif)
 
 # Welcome to My GitHub Profile
 
@@ -26,9 +26,9 @@ Hello! I'm Smit Mehta, a passionate Developer based in Canada. Welcome to my Git
 
 Here are some of the projects I've worked on:
 
-1. [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=smitmehta13&repo=Sherlock_Homes)](https://github.com/smitmehta13/Sherlock_Homes)
-2. [Project 2 Name](Link to Project 2) - Another brief description.
-3. [Project 3 Name](Link to Project 3) - And another!
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=smitmehta13&repo=Sherlock_Homes)](https://github.com/smitmehta13/Sherlock_Homes)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=smitmehta13&repo=Pets-More)](https://github.com/smitmehta13/Pets-More)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=smitmehta13&repo=Grocery-Man)](https://github.com/smitmehta13/Grocery-Man)
 
 ## Skills
 
