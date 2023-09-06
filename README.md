@@ -26,7 +26,7 @@ Hello! I'm Smit Mehta, a passionate Developer based in Canada. Welcome to my Git
 
 Here are some of the projects I've worked on:
 
-1. [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=smitmehta13&repo=sherlock-homes)](https://github.com/smitmehta13/sherlock-homes)
+1. [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=smitmehta13&repo=Sherlock_Homes)](https://github.com/smitmehta13/Sherlock_Homes)
 2. [Project 2 Name](Link to Project 2) - Another brief description.
 3. [Project 3 Name](Link to Project 3) - And another!
 
