@@ -1,5 +1,5 @@
 <!-- Add an eye-catching header with a GIF -->
-![Header]([https://your-gif-url.gif](https://drive.google.com/file/d/1jNwwKme7Vf1ke-Oxd2u5pqw_8IhD4yCn/view))
+![Header]([https://your-gif-url.gifhttps://drive.google.com/file/d/1jNwwKme7Vf1ke-Oxd2u5pqw_8IhD4yCn/view])
 
 # Welcome to My GitHub Profile
 
@@ -15,7 +15,7 @@ Hello! I'm Smit Mehta, a passionate Developer based in Canada. Welcome to my Git
 ## About Me
 
 - 👨‍💻 I'm a Software Developer with a strong interest in Full Stack.
-- 🌐 You can find more about me on my [website![Website](https://www.smitmehta13.com)]
+- 🌐 You can find more about me on my [website](https://smitmehta13.com)
 - 📫 You can reach me at Smitmehta.work@gmail.com.
 - 📚 I'm constantly learning and exploring new technologies.
 
@@ -38,9 +38,9 @@ Here are some of the projects I've worked on:
   - [Technology 3]
 
 <!-- Add skill badges -->
-![Badge 1](https://img.shields.io/badge/-Badge%201-<COLOR>?style=flat-square)
-![Badge 2](https://img.shields.io/badge/-Badge%202-<COLOR>?style=flat-square)
-![Badge 3](https://img.shields.io/badge/-Badge%203-<COLOR>?style=flat-square)
+![Python](https://img.shields.io/badge/-Python-green?style=flat-square)
+![JavaScript](https://img.shields.io/badge/-JavaScript-yellow?style=flat-square)
+![C#](https://img.shields.io/badge/-C%23-blue?style=flat-square)
 
 ## GitHub History
 
