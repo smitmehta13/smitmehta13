@@ -1,11 +1,11 @@
+![Profile Views](https://komarev.com/ghpvc/?username=smitmehta13&label=Profile+Views)
+
 <!-- Add an eye-catching header with a GIF -->
 ![Header](https://s11.gifyu.com/images/SgG7m.gif)
 
 # Welcome to My GitHub Profile
 
-![Profile Views](https://komarev.com/ghpvc/?username=smitmehta13&label=Profile+Views)
-
-Hello! I'm Smit Mehta, a passionate Developer based in Canada. Welcome to my GitHub profile, where I share my projects and contributions to the world of technology and beyond.
+Meet Smit, a full-stack software maestro with a knack for crafting digital wonders and orchestrating seamless user experiences. Armed with an arsenal of coding languages and a passion for innovation, Smit brings a touch of creativity to every project, turning lines of code into digital masterpieces.
 
 <!-- Add social media badges -->
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=LinkedIn&logoColor=white&link=https://www.linkedin.com/in/smitmehta13)](https://www.linkedin.com/in/smitmehta13)
@@ -37,6 +37,11 @@ Here are some of the projects I've worked on:
   - ![Python](https://img.shields.io/badge/-Python-green?style=flat-square)
   - ![JavaScript](https://img.shields.io/badge/-JavaScript-yellow?style=flat-square)
   - ![C#](https://img.shields.io/badge/-C%23-blue?style=flat-square)
+  - ![HTML](https://img.shields.io/badge/-HTML-orange?style=flat-square)
+  - ![CSS](https://img.shields.io/badge/-CSS-blue?style=flat-square)
+  - ![Swift](https://img.shields.io/badge/-Swift-red?style=flat-square)
+  - ![Java](https://img.shields.io/badge/-Java-purple?style=flat-square)
+
 
 ## GitHub History
 
