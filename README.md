@@ -9,7 +9,7 @@ Hello! I'm Smit Mehta, a passionate Developer based in Canada. Welcome to my Git
 
 <!-- Add social media badges -->
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=LinkedIn&logoColor=white&link=https://www.linkedin.com/in/smitmehta13)](https://www.linkedin.com/in/smitmehta13)
-[![Instagram](https://img.shields.io/badge/-Instagram-pink?style=flat-square&logo=Instagram&logoColor=white&link=https://www.instagram.com/smitmehta13)](https://wwww.instagram.com/smitmehta13)
+[![Instagram](https://img.shields.io/badge/-Instagram-pink?style=flat-square&logo=Instagram&logoColor=white&link=https://www.instagram.com/smitmehta13)](https://www.instagram.com/smitmehta13)
 
 
 ## About Me
@@ -26,21 +26,16 @@ Hello! I'm Smit Mehta, a passionate Developer based in Canada. Welcome to my Git
 
 Here are some of the projects I've worked on:
 
-1. [Project 1 Name](Link to Project 1) - A brief description of the project.
+1. [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=smitmehta13&repo=sherlock-homes)](https://github.com/smitmehta13/sherlock-homes)
 2. [Project 2 Name](Link to Project 2) - Another brief description.
 3. [Project 3 Name](Link to Project 3) - And another!
 
 ## Skills
 
 - 🔨 Some of the technologies and tools I'm proficient in include:
-  - [Technology 1]
-  - [Technology 2]
-  - [Technology 3]
-
-<!-- Add skill badges -->
-![Python](https://img.shields.io/badge/-Python-green?style=flat-square)
-![JavaScript](https://img.shields.io/badge/-JavaScript-yellow?style=flat-square)
-![C#](https://img.shields.io/badge/-C%23-blue?style=flat-square)
+  - ![Python](https://img.shields.io/badge/-Python-green?style=flat-square)
+  - ![JavaScript](https://img.shields.io/badge/-JavaScript-yellow?style=flat-square)
+  - ![C#](https://img.shields.io/badge/-C%23-blue?style=flat-square)
 
 ## GitHub History
 
