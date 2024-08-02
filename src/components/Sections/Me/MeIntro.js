@@ -20,7 +20,7 @@ function MeIntro() {
                     <br />
                     Hey there! Welcome to my home on the internet!
                     <br /><br />
-                    My name is Smit Mehta, and I am currently pursuing a career in software development with a strong foundation in Computer Applications.
+                    My name is Smit Mehta ({myAge}), and I am currently pursuing a career in software development with a strong foundation in Computer Applications.
                     <br /><br />
                     I love working with diverse teams on challenging projects that contribute to society's growth in meaningful ways. I have a keen interest in software development, automation, and cloud technologies.
                     <br /><br />
