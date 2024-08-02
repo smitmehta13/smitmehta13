@@ -1,244 +1,179 @@
 import React from 'react'
 import ExperienceCard from './ExperienceCard'
-import COURSERA_LOGO from '../../../assets/images/coursera-logo.svg'
-import ROSS_LOGO from '../../../assets/images/RossLogo.png'
-import TWN_LOGO from '../../../assets/images/the-weather-network-logo.svg'
-import AGF_LOGO from '../../../assets/images/agf-logo.svg'
-import UW_LOGO from '../../../assets/images/uw_logo.jpg'
+import CANADIAN_TIRE_LOGO from '../../../assets/images/CanadianTire-logo.png'
+import TRAVELERS_LOGO from '../../../assets/images/Travelers-logo.png'
+import VUBIQUITY_LOGO from '../../../assets/images/vu-favicon.png'
 import JAVA from '../../../assets/images/java.svg'
-import JAVASCRIPT from '../../../assets/images/javascript.svg'
 import HTML_CSS from '../../../assets/images/html_css.svg'
-import HTML from '../../../assets/images/html.svg'
-import CSS from '../../../assets/images/css.svg'
 import AWS from '../../../assets/images/aws.svg'
-import CPLUS from '../../../assets/images/c++.svg'
-import PYTHON from '../../../assets/images/python.svg'
-import C from '../../../assets/images/C.svg'
-import CPP from '../../../assets/images/c++.svg'
+import ANGULARJS from '../../../assets/images/angular-logo.png'
+import HIBERNATE from '../../../assets/images/hibernate-logo.svg'
+import MYSQL from '../../../assets/images/mysql.svg'
 import SPRING from '../../../assets/images/spring.svg'
-import JQUERY from '../../../assets/images/jquery.svg'
 import REACT from '../../../assets/images/react.svg'
-import TYPESCRIPT from '../../../assets/images/typescript.svg'
-import BOOTSTRAP from '../../../assets/images/bootstrap.svg'
+import TOMCAT from '../../../assets/images/tomcat-logo.svg'
 import MONGODB from '../../../assets/images/mongodb.svg'
 import DOCKER from '../../../assets/images/docker.svg'
 import JENKINS from '../../../assets/images/jenkins.png'
 import KUBERNETES from '../../../assets/images/kubernetes.svg'
-import GO from '../../../assets/images/golang.svg'
-import GIT from '../../../assets/images/git.svg'
-import WEBRTC from '../../../assets/images/webrtc.svg'
-import DYNAMODB from '../../../assets/images/dynamodb.svg'
-import GRPC from '../../../assets/images/grpc-logo.svg'
+import JSP from '../../../assets/images/jsp-logo.png'
 import SPRING_BOOT from '../../../assets/images/spring-boot-logo.png'
 
 function Experience(props) {
-    const COURSERA_TECH = [
-        { src: JAVA, title: 'Java'},
-        { src: SPRING_BOOT, title: 'Spring Boot'},
-        { src: DOCKER, title: 'Docker'},
-        { src: DYNAMODB, title: 'DynamoDB'},
-        { src: GIT, title: 'Git' },
-        { src: JENKINS, title: 'Jenkins'},
-        { src: GRPC, title: 'gRPC'}
-    ]
-    const COURSERA_URLS = {
-        linkedin: 'https://www.linkedin.com/company/coursera/',
-        twitter: "https://twitter.com/coursera",
-        apple: 'https://apps.apple.com/ca/app/coursera-learn-new-skills/id736535961',
-        youtube: 'https://www.youtube.com/user/coursera',
-        instagram: 'https://www.instagram.com/coursera/',
-    }
-    const ROSS_TECH = [
-        { src: CPP, title: 'C++' },
-        { src: WEBRTC, title: 'WebRTC'},
-        { src: C, title: 'C' },
-        { src: DOCKER, title: 'Docker' },
-        { src: GIT, title: 'Git' },
-        { src: MONGODB, title: 'MongoDB' },
-    ]
-    const ROSS_URLS = {
-        linkedin: 'https://www.linkedin.com/company/ross-video/',
-        youtube: 'https://www.youtube.com/channel/UC-Jbo6TqimKosO8YD3PRN_w',
-        instagram: 'https://www.instagram.com/rossvideo/',
-    }
-
-    const TWN_TECH = [
-        { src: GO, title: 'Golang' },
-        { src: KUBERNETES, title: 'Kubernetes' },
-        { src: MONGODB, title: 'MongoDB' },
-        { src: DOCKER, title: 'Docker' },
-        { src: JENKINS, title: 'Jenkins'},
-        { src: TYPESCRIPT, title: 'Typescript' },
-        { src: AWS, title: 'AWS' },
-        { src: GIT, title: 'Git' },
-    ]
-    const TWN_URLS = {
-        twitter: 'https://twitter.com/weathernetwork',
-        apple: 'https://apps.apple.com/ca/app/the-weather-network/id473299958',
-        instagram: 'https://www.instagram.com/weathernetwork',
-        facebook: 'https://www.facebook.com/theweathernetworkCAN',
-    }
-
-    const AGF_TECH = [
+    const TRAVELERS_TECH = [
         { src: JAVA, title: 'Java' },
-        { src: JAVASCRIPT, title: 'JavaScript' },
-        { src: HTML_CSS, title: 'HTML/CSS' },
-        { src: REACT, title: 'React' },
-        { src: SPRING, title: 'Java Spring' },
+        { src: SPRING_BOOT, title: 'Spring Boot' },
         { src: AWS, title: 'AWS' },
-        { src: GIT, title: 'Git' },
-        { src: JQUERY, title: 'jQuery' },
-    ]
-    const AGF_URLS = {
-        linkedin: "https://www.linkedin.com/company/agf-managements",
-        twitter: "https://twitter.com/agf",
-        facebook: "https://www.facebook.com/AGFInvestments/"
-    }
-
-    const UW_TECH = [
-        { src: C, title: 'C' },
-        { src: CPLUS, title: 'C++' },
-        { src: PYTHON, title: 'Python' },
-        { src: HTML, title: 'HTML' },
-        { src: CSS, title: 'CSS' },
-        { src: BOOTSTRAP, title: 'Bootstrap' }
-    ]
-    const UW_URLS = {
-        linkedin: "https://www.linkedin.com/school/uwaterloo/",
-        instagram: "https://www.instagram.com/uofwaterloo",
-        facebook: "https://www.facebook.com/university.waterloo/"
-    }
+        { src: MONGODB, title: 'MongoDB' },
+        { src: REACT, title: 'React' },
+        { src: JENKINS, title: 'Jenkins' },
+        { src: KUBERNETES, title: 'Kubernetes' }
+    ];
+    
+    const TRAVELERS_URLS = {
+        linkedin: 'https://www.linkedin.com/company/travelers/',
+        twitter: 'https://twitter.com/Travelers',
+        apple: 'https://apps.apple.com/us/developer/travelers/id376091402',
+        youtube: 'https://www.youtube.com/@Travelers',
+        instagram: 'https://www.instagram.com/travelersinsurance'
+    };
+    
+    const CANADIAN_TIRE_TECH = [
+        { src: JAVA, title: 'Java' },
+        { src: SPRING, title: 'Spring' },
+        { src: AWS, title: 'AWS' },
+        { src: ANGULARJS, title: 'AngularJS' },
+        { src: DOCKER, title: 'Docker' },
+        { src: HIBERNATE, title: 'Hibernate' }
+    ];
+    
+    const CANADIAN_TIRE_URLS = {
+        linkedin: 'https://www.linkedin.com/company/canadian-tire/',
+        youtube: 'https://www.youtube.com/user/canadiantirecorp',
+        instagram: 'https://www.instagram.com/canadiantire/'
+    };
+    
+    const VUBIQUITY_TECH = [
+        { src: JAVA, title: 'Java' },
+        { src: SPRING, title: 'Spring' },
+        { src: JSP, title: 'JSP' },
+        { src: HTML_CSS, title: 'Html and css' },
+        { src: MYSQL, title: 'MySQL' },
+        { src: TOMCAT, title: 'Tomcat' }
+    ];
+    
+    const VUBIQUITY_URLS = {
+        twitter: 'https://twitter.com/Vubiquity',
+        apple: 'https://apps.apple.com/us/developer/vubiquity/id123456789',
+        instagram: 'https://www.instagram.com/vubiquity',
+        facebook: 'https://www.facebook.com/vubiquity'
+    }    
     return (
         <section className="experience-section animated">
-            <h1 data-aos="fade-down" className="section-title">Experience</h1>
-            <div align="center" className="experiences-wrap sections-wrap">
-                <div>
-                    <ExperienceCard
-                        logo_src={COURSERA_LOGO}
-                        company="Coursera"
-                        company_urls={COURSERA_URLS}
-                        prefered_url="https://www.coursera.org/"
-                        title="Software Engineering Intern"
-                        location="Toronto, Canada"
-                        start_date="January, 2022"
-                        end_date="April, 2022"
-                        tech={COURSERA_TECH}
-                    >
-                        Coursera partners with <strong>more than 200 leading universities</strong> and companies to bring flexible, affordable, job-relevant online learning to individuals and organizations worldwide. Offering learning opportunities—from hands-on projects and courses to job-ready certificates and degree programs.
-                        <br/><br/>
-                        As a Software Engineering Intern in the Content Ingestion team, I worked on creating and improving workflows for importing out-of-platform content into Coursera as well as maintaining APIs to enable institutions to import their content programmatically.
-                        <br/><br/>
-                        The main project I worked on was Canvas Ingestion: allow instructors to import their existing courses in <a rel="noopener noreferrer" target="_blank" className="link" href="https://www.instructure.com/canvas">Canvas</a> platform into Coursera. This project was important because most U.S. university partners use Canvas as their <a rel="noopener noreferrer" target="_blank" className="link" href="https://en.wikipedia.org/wiki/Learning_management_system">LMS</a>, so enabling instructors to simply download an export file and import it, rather than manually copying every item, meant more courses would be launched into the platform and hence more revenue.
-                        <br/><br/>
-                        In technical terms, this project consisted in a couple of <a rel="noopener noreferrer" target="_blank" className="link" href="https://grpc.io/">gRPC</a> endpoints to trigger the import job, which would load the could export file to S3 after performing checks and validations. Once the file was on our S3 bucket, our program would parse the export file which followed the <a rel="noopener noreferrer" target="_blank" className="link" href="http://www.imsglobal.org/cc/index.html">IMSCC specification</a>. Once everything had been parsed, we had an data intermediary representation of all the items as data structures closely related to their IMSCC definitions. We would then convert these data structures into its equivalent Coursera representation and load it to our platform using our course authoring APIs.
-                        <br/><br/>
-                        I worked mostly on the parsing and loading stage of the project developing many of the individual parsers that composed our overal IMSCC parser and also, converting the structures into Coursera's representation and using/maintaining our course authoring APIs to create and store the content into the platform.
-                        <br/>
-                    </ExperienceCard>
-                </div>
-                <div>
-                    <ExperienceCard
-                        logo_src={ROSS_LOGO}
-                        company="Ross"
-                        company_urls={ROSS_URLS}
-                        prefered_url="https://www.rossvideo.com/"
-                        title="Software Developer Intern"
-                        location="Ottawa, Canada"
-                        start_date="January, 2021"
-                        end_date="August, 2021"
-                        tech={ROSS_TECH}
-                    >
-                        Ross powers video productions for <strong>billions</strong> of global viewers daily with the industry’s widest range of smart production solutions and their customers include top broadcast networks like ABC, Fox, and teams like the LA Lakers.
-                        <br/><br/>
-                        As a Software Developer Intern with the <a rel="noopener noreferrer" target="_blank" className="link" href="https://www.rossvideo.com/products-services/infrastructure/softgear-software-based-signal-processing-platform/">softGear</a> team, my main task was to develop an efficient and stable <strong>WebRTC</strong> client.
-                        In a nutshell, the project generates WebRTC streams from an <a rel="noopener noreferrer" target="_blank" className="link" href="https://en.wikipedia.org/wiki/Serial_digital_interface">SDI</a> signal and publishes it to an <a rel="noopener noreferrer" target="_blank" className="link" href="https://webrtcglossary.com/sfu/">SFU</a>, which would route the stream to users on a web browser.
-                        <br/><br/>
-                        Using the <strong>libwebrtc</strong> implementation (the same used by many browsers including Chrome), I implemented <strong>multi-threaded</strong> media pipelines to read raw video and audio frames from shared memory, encode and packetize them as an <a rel="noopener noreferrer" target="_blank" className="link" href="https://en.wikipedia.org/wiki/Real-time_Transport_Protocol">RTP</a> payload to transport over the network. 
-                        <br/><br/>
-                        To improve performance, I developed a custom video codec interface to perform H264 video encoding/decoding on a GPU. To do that, I used <a rel="noopener noreferrer" target="_blank" className="link" href="https://libav.org/">libav</a>, the underlying <strong>C</strong> library of the famous FFmpeg media processing tool. After a successful implementation, the application CPU usage dropped over by 35% per stream.
-                        <br/><br/>
-                        Also, I worked with WebSockets to initiate the WebRTC session and negotiate media metadata and <a rel="noopener noreferrer" target="_blank" className="link" href="https://en.wikipedia.org/wiki/Interactive_Connectivity_Establishment">ICE</a> candidates with the SFU.
+    <h1 data-aos="fade-down" className="section-title">Experience</h1>
+    <div align="center" className="experiences-wrap sections-wrap">
+        <div>
+            <ExperienceCard
+                logo_src={TRAVELERS_LOGO}
+                company="Travelers Insurance"
+                company_urls={TRAVELERS_URLS}
+                prefered_url="https://www.travelers.com/"
+                title="Full Stack Developer"
+                location="Ontario, Canada"
+                start_date="April, 2023"
+                end_date="Present"
+                tech={TRAVELERS_TECH}
+            >
+                As a Full Stack Developer, I documented various phases of the software development life cycle, involved in all phases starting from scoping to deployment.
+                <br/><br/>
+                Proficient in technologies like Core Java (Multithreading, Collections), JSP, Servlets, JMS, JDBC, SOA, XML, XSD, DOM, SAX, XSLT, Web Services, and JSF. Implemented React-based sharing functionality with different application APIs for easy content sharing. 
+                <br/><br/>
+                Developed React-based pagination with custom page size options. Developed and refactored modular User Interface components using React, allowing for efficient code reuse, easier maintenance, code review, and scalability.
+                <br/><br/>
+                Implemented Redux architecture to manage state in large-scale React applications, ensuring data consistency and predictability. Created Redux actions and reducers to handle state changes and update the application's UI accordingly.
+                <br/><br/>
+                Provided service quality node.js Server in the back end to handle requests sent from the front-end jQuery Ajax calls. Integrated Madison Cable Product Management REST API. 
+                <br/><br/>
+                Developed core front-end components of a fast, scalable, complex desktop-class web application using AngularJS framework. Debugged the application using Firebug to traverse the documents and manipulate the Nodes using DOM and DOM functions.
+                <br/><br/>
+                Well-versed with core Java concepts like Collections, Multithreading, Generics, Exception Handling, Java Reflection, and Serialization. Developed API for using AWS Lambda to manage the servers and run the code in AWS.
+                <br/><br/>
+                Implemented various services using Microservices architecture with services working independently and using Spring Boot Microservices to divide the application into submodules. Wrote scripts in JMeter to test the performance of the APIs developed using Apigee for secure and scalable integrations.
+                <br/><br/>
+                Installed, configured, and integrated automation scripts on Continuous Integration tools (CI/CD) like Jenkins for nightly test suite execution. Created S3 buckets and utilized S3 bucket and Glacier for storage and backup on AWS.
+                <br/><br/>
+                Analyzed the Node.js server structure in the legacy project, mimicked the REST service using Java JAX-WS API, and did the corresponding configurations. Created Lambdas that trigger REST calls to handle logical validation errors, duplicate and valid values errors, invalid column format errors, email process models in Appian.
+                <br/><br/>
+                Involved in unit integration, module smoke testing, and automated tests. Participated in Scrum/Agile methodology of software development. Created unit test cases to maintain the quality of the code using JUnit and Mockito.
+            </ExperienceCard>
+        </div>
+        <div>
+            <ExperienceCard
+                logo_src={CANADIAN_TIRE_LOGO}
+                company="Canadian Tire"
+                company_urls={CANADIAN_TIRE_URLS}
+                prefered_url="https://www.canadiantire.ca/"
+                title="Java Developer"
+                location="Ontario, Canada"
+                start_date="May, 2022"
+                end_date="March, 2023"
+                tech={CANADIAN_TIRE_TECH}
+            >
+                Responsible for the design, development, and testing phases of Software Development using Scaled Agile methodology with Test Driven Development (TDD) and Pair Programming.
+                <br/><br/>
+                Analyzing, designing, developing, and integrating UI components with backend using J2EE technologies such as Servlets, Java Beans, and JSP. Developed UI using HTML5, JavaScript, jQuery, JSP, Ajax, and AngularJS.
+                <br/><br/>
+                Utilized Spring MVC framework to implement the MVC design pattern. Implemented Spring framework including Spring-AOP, Spring-ORM, and Spring-JDBC modules.
+                <br/><br/>
+                Utilized JAX-Web Services to interact with other applications using SOAP and WSDL files. Employed SQL databases for data validation and querying from different tables.
+                <br/><br/>
+                Utilized Struts Tag Libraries, Struts Tiles Framework, JSP, HTML5, AJAX, and CSS in developing the presentation layer. Integrated Spring framework 3.0 as a middle-tier component and integrated it with Hibernate 3.4 for backend development.
+                <br/><br/>
+                Utilized JVM for running Java applications ensuring high performance and efficient resource management. Utilized AWS Lambda platform to upload data into AWS S3 buckets and trigger other Lambda functions.
+                <br/><br/>
+                Installed the application on AWS EC2 instances and configured storage on S3 buckets. Developed distributed, transactional, secure, and portable applications based on Java technology using Hibernate technology.
+                <br/><br/>
+                Implemented Hibernate for persisting data into the database. Developed JSPs using Java Beans objects to generate responses for user interfaces. Developed web services using WSDL and used Struts Validation Framework for dynamic validation of user input forms.
+                <br/><br/>
+                Performed Unit testing of applications using the JUnit framework. Used Hibernate named queries to call stored procedures. Developed JSPs and Servlets to dynamically generate HTML and CSS to display Business Rules to business stakeholders.
+                <br/><br/>
+                Implemented Elasticsearch for efficient search and data indexing in applications. Used log4j 1.2 for logging various types of messages to write onto the proprietary log model. Utilized StarTeam version control system for code check-in and checkout. Implemented Jenkins as the continuous integration tool.
+            </ExperienceCard>
+        </div>
+        <div>
+            <ExperienceCard
+                logo_src={VUBIQUITY_LOGO}
+                company="Vubiquity India"
+                company_urls={VUBIQUITY_URLS}
+                prefered_url="https://www.vubiquity.com/"
+                title="Software Developer"
+                location="India"
+                start_date="March, 2020"
+                end_date="April, 2022"
+                tech={VUBIQUITY_TECH}
+            >
+                Documented all phases of the software development lifecycle from scoping to deployment ensuring all modules meet the acceptance criteria.
+                <br/><br/>
+                Engaged in requirement gathering, technical design, and exploration of new technologies including prototyping, benchmarking, and authoring technical specifications.
+                <br/><br/>
+                Developed modules like personal profiles, registration, and web services for integration into a unified web application. Prepared comprehensive test cases for system and integration testing.
+                <br/><br/>
+                Facilitated bug fixing and documented best practices and lessons learned. Integrated applications via SOAP web services and effectively utilized JAR and WAR files. Configured SSL for secure microservices communication.
+                <br/><br/>
+                Implemented DAOs using Spring JDBC API. Studied and contributed to in-house projects using Struts MVC framework. Designed and developed service layers and web tiers.
+                <br/><br/>
+                Utilized Node.js for lightweight server-side development employing Ajax, JavaScript/jQuery, and JSON for database connectivity with MongoDB and MySQL. Implemented core Java concepts such as Multithreading and Exception Handling for feature enhancements.
+                <br/><br/>
+                Developed the entire application using the Spring MVC framework. Extensively applied J2EE design patterns for clean role distribution across application layers. Built SOAP web services in Java using Apache Axis.
+                <br/><br/>
+                Developed presentation layers and GUI frameworks using JSP, HTML, and JavaScript for client-side validation. Utilized Node.js and backbone.js MVC frameworks for web development. Conducted regression testing using Selenium to maintain quality assurance throughout the development process.
+                <br/><br/>
+                Integrated Spring API with Hibernate for Oracle database integration.
+            </ExperienceCard>
+        </div>
+    </div>
+</section>
 
-                        <br/>
-                    </ExperienceCard>
-                </div>
-                <div>
-                    <ExperienceCard
-                        logo_src={TWN_LOGO}
-                        company="TWN"
-                        company_urls={TWN_URLS}
-                        prefered_url="https://www.theweathernetwork.com/"
-                        title="Software Developer in Test, Infrastructure"
-                        location="Oakville, Canada"
-                        start_date="May, 2020"
-                        end_date="August, 2020"
-                        tech={TWN_TECH}
-                    >
-                        The Weather Network is the <strong>#1</strong> weather company in Canada with <strong>4.2M</strong> unique downloads on apps and <strong>113M</strong> average monthly page views across all platforms.
-                        <br/> <br/>
-                        During my 4 month internship, I was part of an <strong>agile</strong> team responsible for the company's forecast engine.
-                        Using <strong>Go</strong>, I worked on deprecating a monolithic <strong>C++</strong> legacy systems used to process <a rel="noopener noreferrer" target="_blank" className="link" href="https://en.wikipedia.org/wiki/Digital_elevation_model">DEM</a> and <a rel="noopener noreferrer" target="_blank" className="link" href="https://en.wikipedia.org/wiki/GRIB">GRIB</a> files originated from <a className="link" rel="noopener noreferrer" target="_blank" href="https://en.wikipedia.org/wiki/Geographic_information_system">GIS</a> teams.
-                        <br/><br/>
-                        Following <strong>microservices</strong> architecture, I developed <strong>loosely coupled</strong> packages and modules to <strong>concurrently</strong> process those weather files and serve the frontend applications efficiently.
-                        <br/><br/>
-                        With <strong>AWS</strong> infrastructure, I created <strong>Lambda</strong> function triggers to handle files arriving in <strong>S3 buckets</strong> and readers for <strong>SQS</strong> queue messages that would feed the <a className="link" rel="noopener noreferrer" target="_blank" href="https://en.wikipedia.org/wiki/European_Centre_for_Medium-Range_Weather_Forecasts">ECMWF</a> and <a className="link" rel="noopener noreferrer" target="_blank" href="https://en.wikipedia.org/wiki/Global_Forecast_System">GFS</a> processor services. 
-                        With MongoDB, I performed <strong>geospatial queries</strong> to achieve high performance when querying any type of weather data for any location of the world.
-                        <br/><br/>
-                        Besides software development, much of my work was focused on <strong>infrastructure automation</strong>. I used <strong>Jenkins, Docker, and Kubernetes</strong> to <strong>standardize the CI/CD</strong> approach on the company for the <strong>Go and Typescript</strong> platforms by engineering a configurable centralized <strong>pipeline</strong> and applied <strong>Blue-Green</strong> deployment strategy to suppress downtime. <br/>
-                        I was also involved in migrating an existing on-premise JFrog Artifactory to the cloud which <strong>facilitated management and reduced cost</strong> of artifacts such as <strong>npm libraries</strong> and <strong>docker images</strong>.
-                        <br/>
-                    </ExperienceCard>
-                </div>
-                <div>
-                    <ExperienceCard
-                        logo_src={AGF_LOGO}
-                        company="AGF"
-                        company_urls={AGF_URLS}
-                        prefered_url="https://www.agf.com"
-                        title="Junior Web Developer"
-                        location="Toronto, Canada"
-                        start_date="September, 2019"
-                        end_date="December, 2019"
-                        tech={AGF_TECH}
-                    >
-                        With its main headquarter located in downtown Toronto, AGF is a company that provides software to facilitate the management of investments and assets for its clients. 
-                        <br /><br />
-                        As a member of the IT Development Services, I played a key role in several projects under AGF.com's repository and I was able to experience the whole <b><strong>development life cycle</strong></b> of the project; from the prototyping phase to production deployment.
-                        <br /><br />
-                        Much of my work was done on the inbox page of the application. I worked on improving the previous prototype of the webpage by making it responsive, adding animations with <strong>Javascript and jQuery</strong>, and implementing it in the codebase using <strong>JSPs</strong> and dynamically generated data fetched from <strong>Java</strong> backend and <strong>SQL databases</strong>.
-                        <br/><br/>
-                        As the project progressed, I had to create <strong>backend endpoints</strong> to handle message submission requests and perform communication between the web page and database. I implemented a <b><strong>file scanning service</strong></b> to ensure the security of BLOB uploads by forwarding them to a <strong>container</strong> running an <a rel="noopener noreferrer" target="_blank" className="link" href="https://en.wikipedia.org/wiki/Internet_Content_Adaptation_Protocol#:~:text=The%20Internet%20Content%20Adaptation%20Protocol,which%20new%20features%20are%20implemented."><b><strong>ICAP server</strong></b></a> with McAffe antivirus software. Although HTTP-like, the mentioned protocol lacks reliable documentation and <a rel="noopener noreferrer" target="_blank" className="link" href="https://github.com/Baekalfen/ICAP-avscan">this repo</a> was essential to my success completing this task.
-                        <br/><br/>
-                        Besides the mentioned project, another essential contribution I made was to migrate off a complex table of investments, currencies, government ratios, and dates from <b><strong>JSPs to ReactJs</strong></b> components. To perform that, I had to update endpoints which used to return server built <strong>HTML</strong> to return <strong>JSON</strong> data that would be handled in the react application.
-                        <br /><br />
-                        Other than the above, on a daily basis, I worked closely with developers and designers to create beautiful, responsive, and dynamic components on other parts of the website!
-                        <br />
-                    </ExperienceCard>
-                </div>
-                <div>
-                    <ExperienceCard
-                        logo_src={UW_LOGO}
-                        company="UWaterloo"
-                        company_urls={UW_URLS}
-                        prefered_url="https://uwaterloo.ca/"
-                        title="CS138 - Teaching Assistant"
-                        location="Waterloo, Canada"
-                        start_date="January, 2019"
-                        end_date="April, 2019"
-                        tech={UW_TECH}
-                    >
-                        The University Of Waterloo is ranked 20th in the world in Computer Science, according to <a rel="noopener noreferrer" target="_blank" className="link" href="https://www.usnews.com/education/best-global-universities/computer-science?page=2">U.S. News</a>, and its Software Engineering program is the most competitive undergraduate program in Canada. <br /> <br />
-                        As a teaching assistant at UW's Computer Science department, I taught and coordinated <a rel="noopener noreferrer" target="_blank" className="link" href="https://www.student.cs.uwaterloo.ca/~cs138/">CS138</a>, a 1st-year level Software Engineering course, and guaranteed its success with over <b><strong>90%</strong></b> of class approval at the end. <br /><br />
-                        In order to promote the course's success, I had to perform both management and coding tasks.
-                        <br /> <br/>
-                        I Conducted office hours and review sessions to teach students (who happened to be my age) the core computer science topics of <strong>Data Structures and Object-Oriented Programming</strong> in <b><strong>C++</strong></b> and essential concepts such as <strong>pointers and trees</strong>. <br/>
-                        In order to automate assignment marking, I designed test cases and developed <b><strong>Python</strong></b> scripts that would compile student's source code, run it against the test case and check for valid solutions by performing a diff check between the canonical solution and the student submission.
-                        <br/> <br/>
-                        Besides that, I maintained the course website, improved its layout and styling by introducing Bootstrap, and created Excel/CSV scripts to automatically update students' marks.
-                    </ExperienceCard>
-                </div>
-            </div>
-        </section>
     )
 }
 

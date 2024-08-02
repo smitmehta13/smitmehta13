@@ -1,5 +1,5 @@
 import React from 'react'
-import RESUME from '../../../assets/resume/lucas_nogueira_resume.pdf'
+import RESUME from '../../../assets/resume/MehtaSmit.pdf'
 import STACKOVERFLOW_ICON from '../../../assets/images/stack_overflow.svg'
 import LINKEDIN_ICON from '../../../assets/images/linkedinIcon.svg'
 import GITHUB_ICON from '../../../assets/images/githubLogo.svg'
@@ -33,20 +33,16 @@ class Home extends React.Component {
                         <div className="mt50">
                             <span className='lucas-name-title'>
                                 <h1>
-                                    <span>Lucas Nogueira</span>
+                                    <span>Smit Mehta</span>
                                 </h1>
                             </span>
                             <div className="home-links justify-around appear-button">
-                                <a className="home-link" rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/lnogueir/">
+                                <a className="home-link" rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/smitmehtadev/">
                                     <img alt="Linkedin Icon" style={{top: 1}} width="26" src={LINKEDIN_ICON}/> Linkedin
                                 </a>
                                 <span><i>•</i></span>
-                                <a className="home-link" rel="noopener noreferrer" target="_blank" href="https://github.com/lnogueir">
+                                <a className="home-link" rel="noopener noreferrer" target="_blank" href="https://github.com/smitmehta13">
                                     <img alt="Github Icon" style={{top: 3}} width="26" src={GITHUB_ICON}/> Github
-                                </a>
-                                <span><i>•</i></span>
-                                <a className="home-link" rel="noopener noreferrer" target="_blank" href="https://stackoverflow.com/users/11348579/lnogueir">
-                                    <img alt="Stack Overflow Icon" style={{top: 3}} width="26" src={STACKOVERFLOW_ICON}/>Stack Overflow
                                 </a>
                             </div>
                         </div>
@@ -56,7 +52,7 @@ class Home extends React.Component {
                             </h3>
                             <div className="home-hire-me-links">
                                 <a rel="noopener noreferrer" target="_blank" href={RESUME} className="home-link"><span role="img" aria-label="Resume Icon">📄</span> Resume</a>
-                                <a rel="noopener noreferrer" target="_blank" href="mailto: lnogueir@uwaterloo.ca" className="home-link"><span role="img" aria-label="Email Icon">📫</span> Email</a>
+                                <a rel="noopener noreferrer" target="_blank" href="mailto: smitmehta.dev@gmail.com" className="home-link"><span role="img" aria-label="Email Icon">📫</span> Email</a>
                             </div>
                         </div>
                     </div>
