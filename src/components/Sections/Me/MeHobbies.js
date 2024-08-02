@@ -3,7 +3,6 @@ import MeImage from './MeImage'
 import MeSectionBreadcrumbs from './MeSectionBreadcrumbs'
 import HOLI from '../../../assets/images/holi.jpg'
 import KAYAKING from '../../../assets/images/Kayaking.jpg'
-import ME_FIT from '../../../assets/images/me_fit.png'
 import Skills from './Skills/Skills'
 
 function MeHobbies(props) {

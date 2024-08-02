@@ -1,6 +1,5 @@
 import React from 'react'
 import RESUME from '../../../assets/resume/MehtaSmit.pdf'
-import STACKOVERFLOW_ICON from '../../../assets/images/stack_overflow.svg'
 import LINKEDIN_ICON from '../../../assets/images/linkedinIcon.svg'
 import GITHUB_ICON from '../../../assets/images/githubLogo.svg'
 import BackgroundGame from './BackgroundGame';
@@ -31,7 +30,7 @@ class Home extends React.Component {
                 <section className="home-section animated">
                     <div>
                         <div className="mt50">
-                            <span className='lucas-name-title'>
+                            <span className='smit-name-title'>
                                 <h1>
                                     <span>Smit Mehta</span>
                                 </h1>
