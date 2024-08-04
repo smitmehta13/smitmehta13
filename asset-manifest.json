@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/smitmehta13/static/css/main.827129a0.chunk.css",
+    "main.css": "/smitmehta13/static/css/main.24b01494.chunk.css",
     "main.js": "/smitmehta13/static/js/main.8db9c7d2.chunk.js",
     "main.js.map": "/smitmehta13/static/js/main.8db9c7d2.chunk.js.map",
     "runtime-main.js": "/smitmehta13/static/js/runtime-main.e8dfa7c2.js",
@@ -9,10 +9,10 @@
     "static/js/2.7fa68b1d.chunk.js": "/smitmehta13/static/js/2.7fa68b1d.chunk.js",
     "static/js/2.7fa68b1d.chunk.js.map": "/smitmehta13/static/js/2.7fa68b1d.chunk.js.map",
     "index.html": "/smitmehta13/index.html",
-    "precache-manifest.07b9447661c29c0653b0ac1ba3d20e7a.js": "/smitmehta13/precache-manifest.07b9447661c29c0653b0ac1ba3d20e7a.js",
+    "precache-manifest.f25f58769092300e6f07b540318a8b2f.js": "/smitmehta13/precache-manifest.f25f58769092300e6f07b540318a8b2f.js",
     "service-worker.js": "/smitmehta13/service-worker.js",
     "static/css/2.7b21c299.chunk.css.map": "/smitmehta13/static/css/2.7b21c299.chunk.css.map",
-    "static/css/main.827129a0.chunk.css.map": "/smitmehta13/static/css/main.827129a0.chunk.css.map",
+    "static/css/main.24b01494.chunk.css.map": "/smitmehta13/static/css/main.24b01494.chunk.css.map",
     "static/media/CanadianTire-logo.png": "/smitmehta13/static/media/CanadianTire-logo.8d2424ec.png",
     "static/media/Kayaking.jpg": "/smitmehta13/static/media/Kayaking.3174fd06.jpg",
     "static/media/MehtaSmit.pdf": "/smitmehta13/static/media/MehtaSmit.455b6c98.pdf",
@@ -45,7 +45,7 @@
     "static/js/runtime-main.e8dfa7c2.js",
     "static/css/2.7b21c299.chunk.css",
     "static/js/2.7fa68b1d.chunk.js",
-    "static/css/main.827129a0.chunk.css",
+    "static/css/main.24b01494.chunk.css",
     "static/js/main.8db9c7d2.chunk.js"
   ]
 }
