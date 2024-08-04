@@ -1607,29 +1607,22 @@ div.me-intro-wrap, div.me-origins-wrap{
   border-radius: .25em;
   max-width: 375px;
   position: relative;
-  & {
-    position: absolute;
-    top: -15px;
-    left: 4px;
-    cursor: pointer;
-    height: 15px;
-    width: 30px;
-    background: rgba(240, 240, 240, .6);
-    color: gray;
-    border-radius: .25em .25em 0 0;
-    transition: .25s ease;
-  }
-  & > i {
-    position: relative;
-    top: -4px;
-  }
   & > div.me-img-title{
     animation-duration: 1.25s;
     & > i{
       position: relative;
       top:-4px;
     }
-    
+    position: absolute;
+    top:-15px;
+    left:4px;
+    cursor:pointer;
+    height: 15px;
+    width: 30px;
+    background: rgba(240, 240, 240, .6);
+    color: gray;
+    border-radius: .25em .25em 0 0;
+    transition: .25s ease;
   }
   & > div.me-img-title-hidden{
     animation-duration: 1.25s;
