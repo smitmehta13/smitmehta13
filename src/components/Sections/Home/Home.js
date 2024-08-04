@@ -47,7 +47,7 @@ class Home extends React.Component {
                         </div>
                         <div className="home-hire-me delay-appear-hire-me">
                             <h3>
-                                Let's work together?
+                                Let's Work together?
                             </h3>
                             <div className="home-hire-me-links">
                                 <a rel="noopener noreferrer" target="_blank" href={RESUME} className="home-link"><span role="img" aria-label="Resume Icon">📄</span> Resume</a>
