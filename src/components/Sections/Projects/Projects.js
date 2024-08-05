@@ -398,3 +398,16 @@
 
 
 // export default Projects;
+import React from 'react';
+
+const Projects = () => {
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh', textAlign: 'center' }}>
+      <h1>Note: I am currently working on this page.</h1>
+      <p>For other projects, please visit my GitHub: <a href="https://github.com/smitmehta13" target="_blank" rel="noopener noreferrer">https://github.com/smitmehta13</a></p>
+      {/* Your existing project code goes here */}
+    </div>
+  );
+};
+
+export default Projects;
