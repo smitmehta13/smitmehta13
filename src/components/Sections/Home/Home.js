@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import RESUME from '../../../assets/resume/MehtaSmit.pdf'
 import LINKEDIN_ICON from '../../../assets/images/linkedinIcon.svg'
 import GITHUB_ICON from '../../../assets/images/githubLogo.svg'
