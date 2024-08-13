@@ -20,6 +20,23 @@ import JSP from '../../../assets/images/jsp-logo.png'
 import SPRING_BOOT from '../../../assets/images/spring-boot-logo.png'
 
 function Experience(props) {
+    useEffect(() => {
+        // Google Analytics code
+        const script1 = document.createElement('script');
+        script1.async = true;
+        script1.src = 'https://www.googletagmanager.com/gtag/js?id=G-9WQG3VLSRH';
+        document.head.appendChild(script1);
+    
+        const script2 = document.createElement('script');
+        script2.innerHTML = `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-9WQG3VLSRH');
+        `;
+        document.head.appendChild(script2);
+      }, []);
+
     const TRAVELERS_TECH = [
         { src: JAVA, title: 'Java' },
         { src: SPRING_BOOT, title: 'Spring Boot' },

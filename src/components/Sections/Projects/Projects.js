@@ -396,11 +396,26 @@
 //     )
 // }
 
-
-// export default Projects;
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const Projects = () => {
+  useEffect(() => {
+    // Google Analytics code
+    const script1 = document.createElement('script');
+    script1.async = true;
+    script1.src = 'https://www.googletagmanager.com/gtag/js?id=G-9WQG3VLSRH';
+    document.head.appendChild(script1);
+
+    const script2 = document.createElement('script');
+    script2.innerHTML = `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-9WQG3VLSRH');
+    `;
+    document.head.appendChild(script2);
+  }, []);
+
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh', textAlign: 'center' }}>
       <h1>Note: I am currently working on this page.</h1>

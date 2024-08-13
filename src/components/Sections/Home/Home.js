@@ -15,7 +15,22 @@ class Home extends React.Component {
         $('body').css('background-color', `linear-gradient(left,#282c34, #282c34, #4b6cb7, #D6A4A4, rgb(68, 130, 172),#757F9A,  #71B280,  #ffe082)`)
     }
 
-    componentDidMount = () => {
+    componentDidMount() {
+        // Google Analytics code
+        const script1 = document.createElement('script');
+        script1.async = true;
+        script1.src = 'https://www.googletagmanager.com/gtag/js?id=G-9WQG3VLSRH';
+        document.head.appendChild(script1);
+    
+        const script2 = document.createElement('script');
+        script2.innerHTML = `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-9WQG3VLSRH');
+        `;
+        document.head.appendChild(script2);
+    
         if (Home.isFirstRender) {
             $('.appear-button').css('animation-delay', '3s');
             $('.delay-appear-hire-me').css('animation-delay', '3.5s');
